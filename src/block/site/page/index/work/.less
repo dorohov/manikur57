@@ -27,6 +27,7 @@
 			height: 100%;
 			fill: #f5f5f5;
 		}		
+		@media @media-size-xs{display: none;}
 		@media @media-size-sm{max-width: 600px; max-height: 600px; top: 10vh}
 		@media @media-size-md-s{max-width: 805px;max-height: 805px;}
 		@media @media-size-md-h{max-width: 855px;max-height: 855px;}
@@ -131,6 +132,7 @@
 	&preview-cols{
 		padding-left: 5px;
 		padding-right: 5px;
+		position: relative;
 		@media @media-size-xs-p{width: 50%}
 		@media @media-size-xs-l{width: 33.33333%}
 		@media @media-notsmart{width: 33.33333%;}
@@ -141,6 +143,7 @@
 		height: 100%;
 		margin-bottom: 15px;
 		&._flex{
+			position: absolute;
 			display: flex;
 			justify-content: center;
 			align-items: center;

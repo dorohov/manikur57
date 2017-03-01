@@ -38,6 +38,7 @@ body {
 	}
 }
 html.open-navbar{
+	.navbar-collapse{opacity: 1;}
 	.navbar-site{
 		left: 195px;
 		//width: 100vw;
@@ -53,7 +54,7 @@ html.open-navbar{
 }
 .page-inner{
 	@media @media-device{
-		overflow: hidden;
+		//overflow-x: hidden;
 	    //min-height: 100vh;
 	    //min-height: 9000px;
 		background: @b-html-bg;
@@ -62,7 +63,7 @@ html.open-navbar{
 		left: 0;
 		z-index: 55;
 		width: 100%;
-		transition: @transition-site;		
+		transition: @transition-site;	
 		/*&::before{
 			content: '';
 			position: fixed;
