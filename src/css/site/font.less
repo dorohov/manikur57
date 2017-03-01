@@ -1,0 +1,77 @@
+/*
+Common weight name mapping
+100 Thin (Hairline)
+200 Extra Light (Ultra Light)
+300 Light
+400 Normal
+500 Medium
+600 Semi Bold (Demi Bold)
+700 Bold
+800 Extra Bold (Ultra Bold)
+900 Black (Heavy)
+*/
+.include-custom-font(
+	@family: @din, 
+	@src-name: @din, 
+	@weight: normal, 
+	@style: normal
+	){
+	@font-face{			
+		font-family: "@{family}";			
+		src:	url('@{url-path-fonts}/@{src-name}.woff2') format('woff2'),
+				url('@{url-path-fonts}/@{src-name}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+.include-custom-icon(@family: @icon, @weight: normal, @style: normal){
+	@font-face{			
+		font-family: "@{family}";			
+		src: url('@{url-path-fonts}/@{family}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+.include-custom-font(
+	@family: @geometria,
+	@src-name: @geometria,
+	@weight: 400, 
+	@style: normal
+);
+.include-custom-font(
+	@family: @geometria,
+	@src-name: @geometria-bold,
+	@weight: 700, 
+	@style: normal
+);
+.include-custom-font(
+	@family: @geometria,
+	@src-name: @geometria-heavy,
+	@weight: 900, 
+	@style: normal
+);
+.include-custom-font(
+	@family: @regal,
+	@src-name: @regal-bold,
+	@weight: 700, 
+	@style: normal
+);
+.include-custom-font(
+	@family: @bodoni,
+	@src-name: @bodoni,
+	@weight: 400, 
+	@style: normal
+);
+.include-custom-font(
+	@family: @bodoni,
+	@src-name: @bodoni-bold,
+	@weight: 700, 
+	@style: normal
+);
+/*
+.include-custom-font(
+	@family: @bodoni-bold-ital,
+	@src-name: @bodoni-bold-ital,
+	@weight: 700, 
+	@style: italic
+);*/

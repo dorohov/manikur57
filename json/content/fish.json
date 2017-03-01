@@ -1,0 +1,38 @@
+{
+	"contacts":{
+		"name":"Маникюр",
+		"email":"sales@zenit-orel.ru",
+		"phone":"49-08-08",
+		"phone_tel":"+74862490808",
+		"address":"г. Орёл, ул. Максима Горького 44"
+	},
+	"soc":{
+		"vk":"",
+		"fb":"",
+		"ok":"",
+		"inst":"https://www.instagram.com/manikur57/"
+	},
+	"url-path-css": "/wp-content/themes/azbnbasetheme/css",
+	"url-path-css":"/css",
+	"url-path-img": "/wp-content/themes/azbnbasetheme/img",
+	"url-path-img":"/img",
+	"url-path-js": "/wp-content/themes/azbnbasetheme/js",
+	"url-path-js":"/js",
+	"url-path-plugins": "/wp-content/themes/azbnbasetheme/plugins",
+	"url-path-plugins":"/plugins",
+	"url-path-favicon": "/wp-content/themes/azbnbasetheme/favicon",
+	"url-path-favicon":"/favicon",
+	"media":{
+		"size.xs":"(max-width: 767px)",
+		"size.xs.p":"(max-width: 767px) and (orientation:portrait)",
+		"size.xs.l":"(max-width: 767px) and (orientation:landscape)",
+		"size.sm":"(min-width: 768px) and (max-width: 1024px)",
+		"size.sm.p":"(min-width: 768px) and (max-width: 1024px) and (orientation:portrait)",
+		"size.sm.l":"(min-width: 768px) and (max-width: 1024px) and (orientation:landscape)"
+	}, 
+	"inst":{
+		"pub":"18",
+		"sub":"339",
+		"follow":"1119"
+	}
+}

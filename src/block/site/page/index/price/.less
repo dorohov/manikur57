@@ -1,0 +1,98 @@
+// ====== prefix ._iwb__ ====== //
+.index-price-block{
+	@media @media-device-p{margin-bottom: 8vh;}
+	@media @media-device-l{margin-bottom: 12vh;}
+	@media @media-screen{margin-bottom: 26vh;}
+	@media @media-size-md-s{margin-bottom: 17vh;}
+	@media @media-size-md-h{margin-bottom: 20vh;}
+}
+._ipb__{
+	&container{
+		@media @media-screen{padding-top: 32.5vh;}
+		position: relative;
+	}
+	&heading-big{
+		text-align: right;
+		z-index: 2;
+		@media @media-device{
+			position: relative;
+		}
+		@media @media-screen{
+			position: absolute;
+			right: 0;
+			top: 17vh;
+		}
+	}
+	&bg-pict{
+		background-image: url("@{url-path-img}/bg/bg-price.jpg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		max-width: 675px; 
+		max-height:610px;
+		width: 70vh;
+	    height: 64vh;
+		position: absolute;
+	    top: -11vh;
+	    right: 21.5%;
+		z-index: 1;
+		@media @media-size-xs-p{
+			max-width: 195px;
+			max-height: 180px;
+			top: -5vh;
+			left: -5vh;
+		}
+		@media @media-size-xs-l{
+			max-width: 255px;
+			max-height: 230px;
+			top: -11vh;
+			right: 25%;
+		}
+		@media @media-size-sm{
+			max-width: 330px;
+			max-height: 300px;
+			left: 10%;
+		}
+		@media @media-size-sm-l{
+			left: 35%;
+		}
+		@media @media-size-md-h{max-width: 515px;max-height: 460px;}
+	}
+	&inner{		
+		position: relative;
+		z-index: 3;
+		@media @media-notsmart{padding-left: 8.5%;}
+		@media @media-size-sm{padding-right: 8.5%}
+		&::before{			
+			@media @media-size-xs{display: none;}
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 15px;
+			bottom: 30px;
+			width: 2px;
+			background-color: @black;
+			transition: @transition-site;
+		}
+	}
+	&heading{
+		@media @media-screen{margin-bottom: 9.3vh;} 
+		@media @media-size-md-h{margin-bottom: 5.3vh;}
+	}
+	&tabs-nav{ 
+		position: relative;
+		._arrow{
+			@media @media-size-xs{display: none;}
+			position: absolute;
+			left: -32px;
+			top: 10px;
+			width: 12px;
+			height: 55px;
+			svg{
+				width: 100%;
+				height: 100%;
+				fill: #626262;
+				stroke: #626262;
+			}
+		}
+	}
+}

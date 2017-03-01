@@ -1,0 +1,34 @@
+.social-block{
+
+}
+.social__row{
+    justify-content: center;
+    @media @media-size-mdl{
+	    > .cols{
+	    	padding-left: 7px;
+	    	padding-right: 7px;
+	    }
+    }
+}
+.social__item{
+	display: block;
+	padding: 4px;
+	border-radius: 50%;
+	//border: 3px solid @mustard;
+	width: 35px;
+	height: 35px;
+	transition: @transition-site;
+	&._inst{padding: 6px;}
+	.icon-soc{
+		width: 100%;
+		height: 100%;
+		//fill: @mustard;
+		transition: @transition-site;
+	}
+	&:hover{
+		//background: @mustard;
+		.icon-soc{
+			fill: @white;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+<form action="#" class="form-site {{prefix}}form"> 
+	<div class="row {{prefix-page}}row">
+		<div class="cols {{prefix-page}}col-6">
+			<div class="{{prefix-form}}input">
+				<label for="f[name]" class="{{prefix-form}}label _name">Имя</label>
+				<input type="text" class="{{prefix-form}}form-control _name form-control validate[required]" id="f[name]">
+			</div>	
+		</div>
+		<div class="cols {{prefix-page}}col-6">
+			<div class="{{prefix-form}}input">
+				<label for="f[tel]" class="{{prefix-form}}label _phone">Телефон</label>
+				<input type="tel" class="{{prefix-form}}form-control _phone form-control validate[required,custom[phone]]" id="f[tel]"> 
+			</div>	
+		</div>
+		<div class="cols {{prefix-page}}col-12">
+			<div class="{{prefix-page}}btn-block">
+				<button type="button" data-toggle="modal" data-target="#modal-message" class="btn-site btn-pink btn-submit {{prefix-page}}btn">{{btn_name}}</button>
+			</div>	 
+		</div>
+	</div>
+</form> 

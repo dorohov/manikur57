@@ -1,0 +1,193 @@
+ //
+// Modals
+// --------------------------------------------------
+
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and shit
+
+// Kill the scroll on the body
+.modal-open {
+	overflow: hidden; 
+}
+.modal {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: @zindex-modal;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+	&.fade .modal-dialog {
+		.translate(0, 0%);
+		.transition-transform(~"0.5s");
+	}
+	&.in .modal-dialog { .translate(0, 10%) }
+	@media @media-size-xs{
+		&.fade .modal-dialog {.translate(-100%, 30vh);}
+		&.in .modal-dialog { .translate(0, 30vh) }
+	}
+	@media @media-notsmart{		
+		&.fade ._msc__dialog {.translate(0%,-300%);}
+		&.in ._msc__dialog { .translate(0%, 30vh) }
+	}
+}
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+	@media @media-notsmart{overflow-y: hidden;}
+	
+}
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: @zindex-modal-background;
+	background-color: @modal-backdrop-bg;
+	// Fade for backdrop
+	&.fade { .opacity(0); }
+	&.in { .opacity(0.90); }
+
+}
+.modal-dialog {
+	position: relative;
+	@media @media-size-xs 	{width: auto;	margin: 0px;}  
+	@media @media-size-sm 	{width: 620px;	margin: 10px auto;}  
+	@media @media-screen 	{width: 620px;	margin: 0px auto;}  
+}
+.modal-content {
+	position: relative;
+	outline: 0;
+}
+.modal-body {
+	position: relative;
+	background: @white;
+	color: @black;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	padding: 40px 30px 30px;
+	@media @media-size-xs{padding: 25px;}	
+	@media @media-size-sml{padding: 30px;}
+}
+
+// Title text within header
+.modal-title {
+	font-weight: 700;
+	margin-bottom: 2vh;
+	@media @media-device-p{
+		font-size: 3vh; 
+		line-height: 4vh;
+	} 
+	@media @media-size-sm-l{
+		font-size: 3vh; 
+		line-height: 4vh;
+	} 	
+	@media @media-size-xs-l{   
+		font-size: 5vh;
+		line-height: 6vh;
+	} 	
+	@media @media-screen{
+		font-size: 4vh; 
+		line-height: 5vh;
+	} 	
+}
+.modal-btn-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+    width: 16px;
+    height: 16px;
+	@media @media-size-xs-p{
+		top: 20px;
+		right: 50%; 
+		transform: translateX(50%);
+	}
+	@media @media-size-xs-l{
+		top: 20px;
+		right: 20px;
+	}
+	svg{
+		width: 100%;
+		height: 100%;
+		transition: @transition-site;
+	}
+	&:hover{
+		svg{
+			fill: @b-color-a;
+		}
+	}
+}
+.modal-block{
+    @media @media-size-xs-p {padding-top: 30px;}
+}
+.modal-note{
+	text-align: center;
+	margin-bottom: 2vh;
+	@media @media-size-xs-l{margin-bottom: 4vh}
+}
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+//custom styles
+._msc__{
+	&body{
+		text-align: center; 
+	}
+	&block{	
+		width: 100%;
+	}
+}
+/*
+._msc__dialog{
+	@media @media-notsmart {
+	    margin: 0 0 0 auto;
+	    position: absolute;
+		top: 50%;
+		left: 50%;
+	} 
+   	@media @media-screen{width: 750px;}
+}
+._msc__body{
+	background: @white;
+	color: @black;
+	text-align: center;
+	justify-content: center;
+	//align-items: flex-start;	
+	position: relative;   	
+	@media @media-device{
+		//font-size: @b-fs + 4px; //18px; 
+		//line-height: @b-lh + 6px; //26px;
+		width: 100%;
+		height: 100%;
+	} 
+	@media @media-notsmart {height: 350px;}
+}
+._msc__block{
+    max-width: 430px;
+    flex-basis: 100%;
+}
+._msc__form{
+	padding-top: 60px;
+   	@media @media-size-xs{padding-top: 25px;}
+   	@media @media-size-mdl{padding-top: 30px;}
+}
+._msc__form-btn{
+	padding-top: 45px;
+   	@media @media-size-xs{padding-top: 15px;}
+   	@media @media-size-mdl{padding-top: 25px;}
+}*/

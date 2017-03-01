@@ -1,0 +1,49 @@
+<div class="{{class}}" id="{{scrollto}}">	
+	<div class="{{prefix}}container container"> 
+		<div class="{{prefix}}bg"></div>
+		<h2 class="{{prefix}}heading">Ждем Вас</h2>
+		<div class="row {{prefix}}row"> 
+			<div class="cols {{prefix}}cols"> 
+				<div>{{contacts.address}}</div>
+				<div class="{{prefix}}tel">Т. <a href="tel:{{contacts.phone_tel}}">{{contacts.phone}}</a></div>
+			</div>
+			<div class="cols {{prefix}}cols"> 
+				<div>ПН - ПТ. <b>10:00 — 20:00</b></div>
+				<div>СБ - ВС. <b>10:00 — 20:00</b></div>
+			</div>
+		</div>
+		<div class="{{prefix}}map" id="2gis-map"></div>
+		<div class="{{prefix}}inst" >
+			<div class="row {{prefix}}inst-row1">
+				<div class="cols {{prefix}}inst-cols">
+					<a href="{{soc.inst}}" target="_blank" class="{{prefix}}inst-link">manikur57</a>
+				</div>
+				<div class="cols {{prefix}}inst-cols">
+					<a href="{{soc.inst}}" target="_blank" class="{{prefix}}inst-key">
+						<span class="_inst">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="inst" ]]</span>
+						instagram
+						<span class="_arrow">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="arrow-inst" ]]</span>  
+					</a>
+					<div class="{{prefix}}inst-text">Легенда-маникюр 21 века!</div>
+				</div>
+				<div class="cols {{prefix}}inst-cols">
+					<a href="{{soc.inst}}" target="_blank" class="{{prefix}}inst-add">
+						<span class="_icon">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="add" ]]</span>
+						Подписаться
+					</a>
+				</div>
+			</div>
+			<div class="row {{prefix}}inst-row2">
+				<div class="cols {{prefix}}inst-cols-count">
+					<b>{{inst.pub}}</b> публикаций
+				</div>
+				<div class="cols {{prefix}}inst-cols-count">
+					<b>{{inst.sub}}</b> подписчиков
+				</div>
+				<div class="cols {{prefix}}inst-cols-count">
+					<b>{{inst.follow}}</b> подписок
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
