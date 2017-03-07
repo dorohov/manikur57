@@ -25,7 +25,7 @@ $(window).load(function(event){
 		if(block.data('counter-can-close-it') && block.data('window-can-close-it')) {
 			
 			setTimeout(function(){
-				block.removeClass('active');//.delay(2000).empty().remove();
+				block.removeClass('active').addClass('ready');//.delay(2000).empty().remove();
 			},85);
 			
 		}

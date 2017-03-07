@@ -3,5 +3,5 @@ $(document.body).on('click.fecss.page-loader.close-loader', '.page-loader .close
 	
 	console.log('body trigger:click.fecss.page-loader.close-loader');
 	
-	$('.page-loader').removeClass('active');
+	$('.page-loader').removeClass('active').addClass('ready');
 });
