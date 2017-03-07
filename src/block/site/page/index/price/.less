@@ -1,15 +1,11 @@
 // ====== prefix ._iwb__ ====== //
 .index-price-block{
-	@media @media-size-xs{overflow: hidden; }
-	@media @media-device-p{margin-bottom: 8vh;}
-	@media @media-device-l{margin-bottom: 12vh;}
-	@media @media-screen{margin-bottom: 26vh;}
-	@media @media-size-md-s{margin-bottom: 17vh;}
-	@media @media-size-md-h{margin-bottom: 20vh;}
+	//@media @media-size-xs{overflow: hidden; }
+	margin-bottom: 12vw;
 }
 ._ipb__{
 	&container{
-		@media @media-screen{padding-top: 32.5vh;}
+		@media @media-screen{padding-top: 17.2vw;}
 		position: relative;
 	}
 	&heading-big{
@@ -21,42 +17,23 @@
 		@media @media-screen{
 			position: absolute;
 			right: 0;
-			top: 17vh;
+			top: 9vw;
 		}
 	}
 	&bg-pict{
-		background-image: url("@{url-path-img}/bg/bg-price.jpg");
+		background-image: url("@{url-path-img}/bg/bg-price.png");
 		background-repeat: no-repeat;
 		background-size: contain;
-		max-width: 675px; 
-		max-height:610px;
-		width: 70vh;
-	    height: 64vh;
+		max-width: 500px;
+		max-height: 480px;
+		width: 27vw;
+		height: 26vw;
 		position: absolute;
-	    top: -11vh;
-	    right: 21.5%;
+		top: -1vw;
+		right: 20vw;
 		z-index: 1;
-		@media @media-size-xs-p{
-			max-width: 195px;
-			max-height: 180px;
-			top: -3vh;
-			left: -5vh;
-		}
-		@media @media-size-xs-l{
-			max-width: 255px;
-			max-height: 230px;
-			top: -11vh;
-			right: 25%;
-		}
-		@media @media-size-sm{
-			max-width: 330px;
-			max-height: 300px;
-			left: 10%;
-		}
-		@media @media-size-sm-l{
-			left: 35%;
-		}
-		@media @media-size-md-h{max-width: 515px;max-height: 460px;}
+		@media @media-size-xs{right: 40vw;}
+		@media @media-size-sm{right: 30vw;}
 	}
 	&inner{		
 		position: relative;
@@ -97,3 +74,66 @@
 		}
 	}
 }
+
+/*
+.index-price-block{
+	@media @media-size-xs{overflow: hidden; }
+
+	@media @media-device-p{margin-bottom: 8vh;}
+	@media @media-device-l{margin-bottom: 12vh;}
+	@media @media-screen{margin-bottom: 26vh;}
+	@media @media-size-md-s{margin-bottom: 17vh;}
+	@media @media-size-md-h{margin-bottom: 20vh;}
+}
+._ipb__{
+	&container{
+		@media @media-screen{padding-top: 32.5vh;}
+		position: relative;
+	}
+	&heading-big{
+		text-align: right;
+		z-index: 2;
+		@media @media-device{
+			position: relative;
+		}
+		@media @media-screen{
+			position: absolute;
+			right: 0;
+			top: 17vh;
+		}
+	}
+	&bg-pict{
+		background-image: url("@{url-path-img}/bg/bg-price.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		max-width: 675px; 
+		max-height:610px;
+		width: 70vh;
+	    height: 64vh;
+		position: absolute;
+	    top: -11vh;
+	    right: 21.5%;
+		z-index: 1;
+		@media @media-size-xs-p{
+			max-width: 195px;
+			max-height: 180px;
+			top: -3vh;
+			left: -5vh;
+		}
+		@media @media-size-xs-l{
+			max-width: 255px;
+			max-height: 230px;
+			top: -11vh;
+			right: 25%;
+		}
+		@media @media-size-sm{
+			max-width: 330px;
+			max-height: 300px;
+			left: 10%;
+		}
+		@media @media-size-sm-l{
+			left: 35%;
+		}
+		@media @media-size-md-h{max-width: 515px;max-height: 460px;}
+	}
+}*/

@@ -2,25 +2,20 @@
 .index-contacts-block{
 	position: relative;
 	z-index: 2;
-	@media @media-screen{margin-bottom: 6vh;}
+	@media @media-device{margin-bottom: 6vw;}
+	@media @media-screen{margin-bottom: 3vw;}
 }
 ._icb__{
 	&container{
-		position: relative; 
-    	@media @media-device-p{
-			padding-top: 8vh;
-    		padding-bottom: 8vh;
-    	}
-    	@media @media-device-l{
-			padding-top: 12vh;
-    		padding-bottom: 12vh;
+		position: relative;
+    	@media @media-device{
+			padding-top: 10vw;
+    		padding-bottom: 8vw;
     	}
     	@media @media-screen{
-			padding-top: 21.5vh;
-    		padding-bottom: 12vh;
+			padding-top: 11.2vw;
+    		padding-bottom: 6vw;
     	}
-		@media @media-size-md-s{padding-top: 9.5vh;}
-		@media @media-size-md-h{padding-top: 17.5vh;}
 	}
 	&bg{
 		position: absolute;
@@ -30,10 +25,10 @@
 		background-size: contain;
 		max-width: 669px;
 		max-height: 592px;
-		width: 70vh;
-		height: 62vh;
-	    right: 2%;
-	    top: 6vh;
+		width: 37vw;
+		height: 32vw;
+		right: 1.5vw;
+		top: 3vw;
 	    z-index: 15;
 	    @media @media-device{display: none;}
 		@media @media-size-md-s{
@@ -46,13 +41,11 @@
 		}
 	}
 	&heading{
-    	@media @media-screen{margin-bottom: 8vh;}
-		@media @media-size-md-h{margin-bottom: 5vh;}
+    	@media @media-screen{margin-bottom: 4vw;}
 	}
 	&row{
-    	@media @media-device-p{margin-bottom: 4vh;}
-    	@media @media-device-l{margin-bottom: 6vh;}
-    	@media @media-screen{margin: 0 -40px 10vh;}
+    	@media @media-device{margin-bottom: 8vw;}
+    	@media @media-screen{margin: 0 -40px 5.5vw;}
 	}
 	&cols{
 		//width: 16.65%;
@@ -73,33 +66,43 @@
 	}
 	&map{
 		height: 61vh;
-		@media @media-size-xs-p{margin-bottom: 4vh}
-		@media @media-size-xs-l{margin-bottom: 8vh}
+		@media @media-size-xs{margin-bottom: 6vw}
 	}
 	&inst{
 		z-index: 20;
 		background: @white;
 		//background: red;
-		padding: 4.5vh 5vh;
 		box-shadow: 0px 15px 54px 0px rgba(6, 22, 40, 0.15);
 		font-size: @b-fs - 2px;
 		color: @grey;
 		a{color: @grey;}
+		@media @media-size-xs-p{
+			padding: 6vw;
+		}
+		@media @media-size-xs-l{
+			padding: 4vw;
+		}
 		@media @media-notsmart{
 			bottom: 0;
 			left: 50%;
 			width: 49%;
 			position: absolute;
 			transform: translateX(-50%);
+			//padding: 4.5vh 5vh;
+			padding: 2.4vw 2.4vw;
 		}
 		@media @media-size-sm-p{width: 90%}
 		@media @media-size-sm-l{width: 70%}
-		@media @media-screen{min-height: 26vh;}
+		@media @media-screen{
+			//min-height: 26vh;
+			min-height: 13.5vw;
+		}
 		@media @media-size-md{width: 70%}
 	}
 	&inst-row1{
 		justify-content: space-between;
-		margin-bottom: 3vh;
+		//margin-bottom: 3vh;
+		margin-bottom: 1.5vw;
 		@media @media-size-xs-p{margin-bottom: 0;}
 	}
 	&inst-cols{
@@ -139,7 +142,7 @@
 		font-size: @b-fs + 6px;
 		padding: 15px 25px 20px 50px;
 		margin-bottom: 3px;
-		@media @media-size-xs-p{width: 70%;}
+		@media @media-size-xs-p{width: 70%; max-width: 190px;}
 		._inst{
 			width: 34px;
 			height: 34px;
@@ -190,6 +193,7 @@
 			top: 50%;
 			left: 0;
 			transform: translateY(-80%);
+			@media @media-size-xs{transform: translateY(-55%);}
 			width: 13px;
 			height: 14px;
 			svg{
@@ -219,3 +223,51 @@
 		@media @media-size-xs-p{width: 100%}
 	}
 }
+/*
+
+	&container{
+		position: relative; 
+    	@media @media-device-p{
+			padding-top: 8vh;
+    		padding-bottom: 8vh;
+    	}
+    	@media @media-device-l{
+			padding-top: 12vh;
+    		padding-bottom: 12vh;
+    	}
+    	@media @media-screen{
+			padding-top: 21.5vh;
+    		padding-bottom: 12vh;
+    	}
+		@media @media-size-md-s{padding-top: 9.5vh;}
+		@media @media-size-md-h{padding-top: 17.5vh;}
+	}
+	&bg{
+		position: absolute;
+		background-image: url("@{url-path-img}/bg/bg-contacts.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		max-width: 669px;
+		max-height: 592px;
+		width: 70vh;
+		height: 62vh;
+	    right: 2%;
+	    top: 6vh;
+	    z-index: 15;
+	    @media @media-device{display: none;}
+		@media @media-size-md-s{
+			max-width: 400px;
+			max-height: 352px;
+		}
+		@media @media-size-md-h{
+			max-width: 570px;
+			max-height: 500px;
+		}
+	}
+
+	&heading{
+    	@media @media-screen{margin-bottom: 8vh;}
+		@media @media-size-md-h{margin-bottom: 5vh;}
+	}
+*/

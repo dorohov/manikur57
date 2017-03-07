@@ -1,0 +1,57 @@
+// ====== prefix ._irb__ ====== //
+.index-action-block{
+	position: relative;
+	z-index: 2;
+	@media @media-device{margin-bottom: 12vw;}
+	@media @media-screen{margin-bottom: 10vw;}
+}
+._iacb__{
+	&heading{
+		text-align: center;
+	    margin-bottom: 3vw;
+	}
+	&owl-block{
+	    position: relative; 
+		@media @media-notsmart{
+	    	max-width: 1450px;
+	    	margin: 0 40px;
+		}
+		@media @media-screen{
+			&::before,
+			&::after{
+				content: '';
+				position: absolute;
+				z-index: 1;
+				background-color: @blue-light; 
+			}
+			&::before{
+				max-width: 560px;
+				bottom: 0vw;
+				left: -3.5vw;
+				max-height: 460px;
+				width: 32vw;
+				height: 27vw;
+			}
+			&::after{
+				top: -5.3vw;
+				right: -3.5vw;
+				max-width: 270px;
+				max-height: 455px;
+				width: 16vw;
+				height: 25vw;
+			}
+		}
+	}
+	&owl{
+		padding-bottom: 50px;
+		z-index: 2!important;
+		.owl-stage-outer{
+			border: 3px solid @blue-light;
+		}
+	}
+	&item{
+		img{}
+	}
+	&{}
+	&{}
+}

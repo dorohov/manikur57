@@ -10,105 +10,134 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: 400;	
 }
 h1{
-	font-family: @bodoni;
-	//font-size: 100px;
-	//line-height: 80px;
-	@media @media-device-p{
-	    font-size: 5.35vh; 
-    	line-height: 4.35vh; 
-	}
-	@media @media-size-xs-l{
-		font-size: 10.35vh;
-		line-height: 9.35vh;
-	}
-	@media @media-size-sm-l{
-	    font-size: 7.35vh; 
-    	line-height: 6.35vh; 
-	}
-	@media @media-screen{
-	    font-size: 10.35vh; //100
-    	line-height: 8.35vh; //80
-	}
-	@media @media-size-md-s{
-		font-size: 6.35vh;
-		line-height: 5.35vh;
-	}	
-	@media @media-size-md-h{
-		font-size: 7.35vh;
-    	line-height: 5.35vh;
-	}
+	font-family: @bodoni;	
+	.calcFontSize(30, 92, 320, 1680); 
+	.calcLineHeight(24, 78, 320, 1680); 
 }
 h2{
 	font-family: @bodoni;
-	font-size: 55px;
-	line-height: 65px;
-	@media @media-device-p{
-	    font-size: 4.35vh; 
-    	line-height: 5.35vh; 
-    	margin-bottom: 2vh;
-	}
-	@media @media-size-xs-l{
-	    font-size: 9.35vh; 
-    	line-height: 10.35vh; 
-    	margin-bottom: 3vh;
-	}
-	@media @media-size-sm-l{
-	    font-size: 6vh; 
-    	line-height: 7vh; 
-    	margin-bottom: 3vh;
-	}
-	@media @media-screen{
-	    font-size: 5.7vh; //55px
-    	line-height: 6.75vh; //65px
-    	margin-bottom: 3.8vh;
-	}
-	@media @media-size-md-h{
-	    font-size: 4.7vh; //55px
-    	line-height: 5.75vh; //65px
-    	margin-bottom: 2.8vh;
-    }
+	.calcFontSize(28, 52, 320, 1680); 
+	.calcLineHeight(34, 62, 320, 1680); 
+	 margin-bottom: 2vw;
 }
 h3{
-	//font-size: 100px;
-	//line-height: 95px;
 	font-weight: 900;
 	color: @pink;
 	text-transform: uppercase;
-	@media @media-device-p{
-		font-size: 8.5vh;
-		line-height: 9.5vh;
-		margin-bottom: 3vh;
-   	}
-	@media @media-size-xs-l{
-		font-size: 10.5vh;
-		line-height: 11.5vh;
-   	}
-	@media @media-size-sm-l{
-		font-size: 10.5vh;
-		line-height: 11.5vh;
-   	}
-	@media @media-screen{
-		font-size: 10.5vh;
-		line-height: 11.5vh;
-   	}
-	@media @media-size-md-h{
-		font-size: 7.5vh;
-    	line-height: 8.5vh;
-	}
+	.calcFontSize(34, 92, 320, 1680); 
+	.calcLineHeight(34, 106, 320, 1680);
 }
 h4{
 	font-size: 22px;
 	line-height: 30px;
 	font-weight: 700;
 }
-h5{
-	@media @media-notsmart	{font-size: @b-fs; line-height: @b-lh - 2px;} 				// 20/26
-	@media @media-size-xs	{font-size: @b-fs - 2px; line-height: @b-lh - 4px;} 	
-}
-h6{
-	@media @media-notsmart	{font-size: @b-fs - 2px; line-height: @b-lh - 4px;} 	
-	@media @media-size-xs	{font-size: @b-fs - 3px; line-height: @b-lh - 4px;} 	
-}
+/*old
+	
+	h1{
+		font-family: @bodoni;	
+		font-size: 100px;
+		line-height: 80px;
+		/*@media @media-device-p{
+		    font-size: 5.35vh; 
+	    	line-height: 4.35vh; 
+		}
+		@media @media-size-xs-l{
+			font-size: 10.35vh;
+			line-height: 9.35vh;
+		}
+		@media @media-size-sm-l{
+		    font-size: 7.35vh; 
+	    	line-height: 6.35vh; 
+		}
+		@media @media-screen{
+		    font-size: 10.35vh; //100
+	    	line-height: 8.35vh; //80
+		    font-size: 5.5vw; //100
+	    	line-height: 4.5vw; //80
+		}
+		@media @media-size-md-s{
+			font-size: 6.35vh;
+			line-height: 5.35vh;
+		}	
+		@media @media-size-md-h{
+			font-size: 7.35vh;
+	    	line-height: 5.35vh;
+		}
+		@media @media-size-xl{
+			font-size: 7.35vh;
+	    	line-height: 5.35vh;		
+		}
+
+	}
+	h2{
+		font-family: @bodoni;
+		//font-size: 55px;
+		//line-height: 65px;
+		@media @media-device-p{
+		    //font-size: 4.35vh; 
+	    	//line-height: 5.35vh; 
+	    	margin-bottom: 2vh;
+		}
+		@media @media-size-xs-l{
+		    //font-size: 9.35vh; 
+	    	//line-height: 10.35vh; 
+	    	margin-bottom: 3vh;
+		}
+		@media @media-size-sm-l{
+		    //font-size: 6vh; 
+	    	//line-height: 7vh; 
+	    	margin-bottom: 3vh;
+		}
+		@media @media-screen{
+		    //font-size: 5.7vh; //55px
+	    	//line-height: 6.75vh; //65px
+	    	margin-bottom: 3.8vh;
+		}
+		@media @media-size-md-h{
+		    //font-size: 4.7vh; //55px
+	    	//line-height: 5.75vh; //65px
+	    	margin-bottom: 2.8vh;
+	    }
+	}
+	h3{
+		font-weight: 900;
+		color: @pink;
+		text-transform: uppercase;
+		//font-size: 100px;
+		//line-height: 95px;
+		@media @media-device-p{
+			font-size: 8.5vh;
+			line-height: 9.5vh;
+			margin-bottom: 3vh;
+	   	}
+		@media @media-size-xs-l{
+			font-size: 10.5vh;
+			line-height: 11.5vh;
+	   	}
+		@media @media-size-sm-l{
+			font-size: 10.5vh;
+			line-height: 11.5vh;
+	   	}
+		@media @media-screen{
+			font-size: 10.5vh;
+			line-height: 11.5vh;
+	   	}
+		@media @media-size-md-h{
+			font-size: 7.5vh;
+	    	line-height: 8.5vh;
+		}
+	}
+
+	h5{
+		@media @media-notsmart	{font-size: @b-fs; line-height: @b-lh - 2px;} 				// 20/26
+		@media @media-size-xs	{font-size: @b-fs - 2px; line-height: @b-lh - 4px;} 	
+	}
+	h6{
+		@media @media-notsmart	{font-size: @b-fs - 2px; line-height: @b-lh - 4px;} 	
+		@media @media-size-xs	{font-size: @b-fs - 3px; line-height: @b-lh - 4px;} 	
+	}
+*/
 i, em{font-style: italic;}
 b, strong{font-weight: 700}
 .heading-block{

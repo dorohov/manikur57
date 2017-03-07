@@ -6,8 +6,8 @@
 		padding: 0 0px;
 		top: 0!important;
 		left: 0;
-		width: 100vw;
-		//width: 100%;
+		//width: 100vw;
+		width: 100%;
 		z-index: 105!important;
 		background: @b-nav-bg-device; 
 		color: @b-nav-color-device;
@@ -32,7 +32,8 @@
 		width: 100%;
 		z-index: 5;
 		//padding: 45px 0;
-	    padding: 4.7vh 0;
+	    //padding: 4.7vh 0;
+        //padding: 2.4vw 0;
 		.navbar-brand{
 			svg{
 				&.icon-logo-full{display: block;}
@@ -67,9 +68,11 @@
 			background: @b-nav-bg-screen;
 		}
 	}
-	@media @media-size-md-s{
+	/*@media @media-size-md-s{
 	    padding: 2.5vh 0;
-	}
+	}*/
+	@media @media-size-xl{padding: 25px 0; }
+	@media @media-size-xxl{padding: 45px 0; }
 }
 .navbar-row{
 	flex-wrap: wrap;
@@ -133,7 +136,7 @@
 		height: 140px;
 		display: block;
 	}
-	@media @media-size-md-s{
+	@media @media-size-mdl{
 		width: 95px;
 		height: 110px;
 	}
@@ -156,7 +159,8 @@
 		display: block;		
 		transition: 0.5s all;    
 		width: 195px;
-	    height: 100vh!important;
+	    //height: 100vh!important;
+	    height: 100%!important;
         z-index: 1;
         padding: 0;
         overflow: visible!important;

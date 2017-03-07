@@ -2,10 +2,10 @@
 	<div class="{{prefix}}round">
 		[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="round" ]]
 	</div>
-	<div class="container">
+	<div class="container {{prefix}}container">
 		<div class="row {{prefix}}row">
 			<div class="cols {{prefix}}cols-left">
-				<div class="{{prefix}}inst-block">
+				<div class="{{prefix}}inst-block wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
 					<div class="{{prefix}}inst-icon">
 						<a href="{{soc.inst}}" target="_blank" class="_icon">
 							[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="inst" ]]
@@ -18,8 +18,17 @@
 						<li><a href="https://www.instagram.com/explore/tags/%D1%86%D0%B5%D1%85%D0%BD%D0%BE%D0%B3%D1%82%D0%B5%D0%B2%D0%BE%D0%B9%D0%B8%D0%BD%D0%B4%D1%83%D1%81%D1%82%D1%80%D0%B8%D0%B8/" rel="nofollow" target="_blank">#цехногтевойиндустрии</a></li>
 					</ul>
 				</div>
-				<div class="{{prefix}}preview">
-					<img src="{{url-path-img}}/index/work-item-big.jpg" alt="">
+				<div class="{{prefix}}tab-preview tab-content">
+					<div class="tab-pane fade in active">
+						<div class="{{prefix}}preview">
+							<a href="{{url-path-img}}/work/item11.jpg" data-title="" rel="work-manicure-gallary" class="fancybox"><img src="{{url-path-img}}/work/item11-590x575.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="tab-pane fade">
+						<div class="{{prefix}}preview">
+							<img src="{{url-path-img}}/index/work-item-big.jpg" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="cols {{prefix}}cols-right">
@@ -29,35 +38,35 @@
 				<div class="{{prefix}}tabs-block tabs-block">
 					<ul class="{{prefix}}tabs-nav tabs-block__nav">
 						<li class="active"><a href="#work-manicure" data-toggle="tab">маникюр</a></li>
-						<li><span>/</span></li>
-						<li><a href="#work-pedicure" data-toggle="tab">педикюр</a></li>
+						<li><span>/</span></li>						
+						<li><a href="#work-pedicure" data-toggle="disable">педикюр</a></li> 
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane fade in active" id="work-manicure">
 							<div class="row {{prefix}}preview-row">
 								<div class="cols {{prefix}}preview-cols">
 									<div class="{{prefix}}preview-item">
-										<img src="{{url-path-img}}/index/work-item1.jpg" alt="">
+										<a href="{{url-path-img}}/work/item1.jpg" data-title="" rel="work-manicure-gallary" class="fancybox"><img src="{{url-path-img}}/work/item1-290x280.jpg" alt=""></a>
 									</div>
 								</div>
 								<div class="cols {{prefix}}preview-cols">
 									<div class="{{prefix}}preview-item">
-										<img src="{{url-path-img}}/index/work-item2.jpg" alt="">
+										<a href="{{url-path-img}}/work/item3.jpg" data-title="" rel="work-manicure-gallary" class="fancybox"><img src="{{url-path-img}}/work/item3-290x280.jpg" alt=""></a>
 									</div>
 								</div>
 								<div class="cols {{prefix}}preview-cols">
 									<div class="{{prefix}}preview-item">
-										<img src="{{url-path-img}}/index/work-item3.jpg" alt="">
+										<a href="{{url-path-img}}/work/item5.jpg" data-title="" rel="work-manicure-gallary" class="fancybox"><img src="{{url-path-img}}/work/item5-290x280.jpg" alt=""></a>
 									</div>
 								</div>
 								<div class="cols {{prefix}}preview-cols">
 									<div class="{{prefix}}preview-item">
-										<img src="{{url-path-img}}/index/work-item4.jpg" alt="">
+										<a href="{{url-path-img}}/work/item7.jpg" data-title="" rel="work-manicure-gallary" class="fancybox"><img src="{{url-path-img}}/work/item7-290x280.jpg" alt=""></a>
 									</div>
 								</div>
 								<div class="cols {{prefix}}preview-cols">
 									<div class="{{prefix}}preview-item">
-										<img src="{{url-path-img}}/index/work-item5.jpg" alt="">
+										<a href="{{url-path-img}}/work/item10.jpg" data-title="" rel="work-manicure-gallary" class="fancybox"><img src="{{url-path-img}}/work/item10-290x280.jpg" alt=""></a>
 									</div>
 								</div>
 								<div class="cols {{prefix}}preview-cols">

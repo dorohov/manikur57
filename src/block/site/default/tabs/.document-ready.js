@@ -1,4 +1,4 @@
- $(document.body).on('click', '.tabs-block__nav a', {}, function(event){
+$(document.body).on('click', '.tabs-block__nav a', {}, function(event){
 	event.preventDefault();
 
 	var btn = $(this);

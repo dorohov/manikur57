@@ -54,7 +54,7 @@ html.open-navbar{
 }
 .page-inner{
 	@media @media-device{
-		//overflow-x: hidden;
+		overflow-x: hidden;
 	    //min-height: 100vh;
 	    //min-height: 9000px;
 		background: @b-html-bg;
@@ -133,6 +133,32 @@ ul{
 		}
 	}*/
 }
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	&.infinite {
+		animation-iteration-count: infinite;
+	}
+	&.hinge {	
+		animation-duration: 2s;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+}
+/*
 .index-page{
 	@media @media-size-xs-l{
 		.container{
@@ -176,7 +202,6 @@ ul{
 		//@media @media-screen{width: 100%; padding: 0}
 	}
 }
-.ws-chat .ws-chat-btn-el-container{bottom: 10%!important;}
 
 .index-full-block{
 	@media @media-screen{
@@ -213,7 +238,7 @@ ul{
 	}
 }
 
-/*
+
 .site-wrap{
 	position: relative;
 	@media @media-device{

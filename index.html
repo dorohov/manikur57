@@ -57,10 +57,16 @@
 					<div class="navbar-collapse-inner">	
 						<ul class="nav navbar-nav">		 	
 							<li>
-								<a href="#work-index" class="scrollto">Наши работы</a>
+								<a href="#work-index" class="scrollto" data-scrollto-diff="-50">Наши работы</a> 
 							</li>		 	
 							<li>
 								<a href="#price-index" class="scrollto">Услуги и цены</a>
+							</li>		 	
+							<li>
+								<a href="#team-index" class="scrollto" data-scrollto-diff="-100">Команда</a>
+							</li>		 	
+							<li>
+								<a href="#action-index" class="scrollto"  data-scrollto-diff="-100">Акции</a>
 							</li>	 	
 							<li>
 								<a href="#reviews-index" class="scrollto" data-scrollto-diff="-100">Отзывы</a>
@@ -84,12 +90,15 @@
 		<div class="_ihb__inner">
 			<h1 class="_ihb__header">Выдающийся маникюр</h1>
 			<div class="_ihb__price">Всего за <span>150 р.</span></div>
-			<div class="_ihb__line"></div>
+			<!-- <div class="_ihb__line"></div> -->
+			<div class="_ihb__btn-block">
+				<a href="#" class="btn-pink btn-site btn-submit sm _ihb__btn">Онлайн запись</a>
+			</div>
 		</div>
 	</div>
-	<div class="_ihb__round"><svg class="icon-svg icon-round" role="img">
+	<!-- <div class="_ihb__round"><svg class="icon-svg icon-round" role="img">
 	<use xlink:href="/img/svg/sprite.svg#round"></use>
-</svg></div>
+</svg></div> -->
 	<div class="_ihb__bg"></div>
 </header>
 
@@ -100,10 +109,10 @@
 	<use xlink:href="/img/svg/sprite.svg#round"></use>
 </svg>
 	</div>
-	<div class="container">
+	<div class="container _iwb__container">
 		<div class="row _iwb__row">
 			<div class="cols _iwb__cols-left">
-				<div class="_iwb__inst-block">
+				<div class="_iwb__inst-block wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
 					<div class="_iwb__inst-icon">
 						<a href="https://www.instagram.com/manikur57/" target="_blank" class="_icon">
 							<svg class="icon-svg icon-inst" role="img">
@@ -118,8 +127,17 @@
 						<li><a href="https://www.instagram.com/explore/tags/%D1%86%D0%B5%D1%85%D0%BD%D0%BE%D0%B3%D1%82%D0%B5%D0%B2%D0%BE%D0%B9%D0%B8%D0%BD%D0%B4%D1%83%D1%81%D1%82%D1%80%D0%B8%D0%B8/" rel="nofollow" target="_blank">#цехногтевойиндустрии</a></li>
 					</ul>
 				</div>
-				<div class="_iwb__preview">
-					<img src="/img/index/work-item-big.jpg" alt="">
+				<div class="_iwb__tab-preview tab-content">
+					<div class="tab-pane fade in active">
+						<div class="_iwb__preview">
+							<a href="/img/work/item11.jpg" data-title="" rel="work-manicure-gallary" class="fancybox"><img src="/img/work/item11-590x575.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="tab-pane fade">
+						<div class="_iwb__preview">
+							<img src="/img/index/work-item-big.jpg" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="cols _iwb__cols-right">
@@ -129,35 +147,35 @@
 				<div class="_iwb__tabs-block tabs-block">
 					<ul class="_iwb__tabs-nav tabs-block__nav">
 						<li class="active"><a href="#work-manicure" data-toggle="tab">маникюр</a></li>
-						<li><span>/</span></li>
-						<li><a href="#work-pedicure" data-toggle="tab">педикюр</a></li>
+						<li><span>/</span></li>						
+						<li><a href="#work-pedicure" data-toggle="disable">педикюр</a></li> 
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane fade in active" id="work-manicure">
 							<div class="row _iwb__preview-row">
 								<div class="cols _iwb__preview-cols">
 									<div class="_iwb__preview-item">
-										<img src="/img/index/work-item1.jpg" alt="">
+										<a href="/img/work/item1.jpg" data-title="" rel="work-manicure-gallary" class="fancybox"><img src="/img/work/item1-290x280.jpg" alt=""></a>
 									</div>
 								</div>
 								<div class="cols _iwb__preview-cols">
 									<div class="_iwb__preview-item">
-										<img src="/img/index/work-item2.jpg" alt="">
+										<a href="/img/work/item3.jpg" data-title="" rel="work-manicure-gallary" class="fancybox"><img src="/img/work/item3-290x280.jpg" alt=""></a>
 									</div>
 								</div>
 								<div class="cols _iwb__preview-cols">
 									<div class="_iwb__preview-item">
-										<img src="/img/index/work-item3.jpg" alt="">
+										<a href="/img/work/item5.jpg" data-title="" rel="work-manicure-gallary" class="fancybox"><img src="/img/work/item5-290x280.jpg" alt=""></a>
 									</div>
 								</div>
 								<div class="cols _iwb__preview-cols">
 									<div class="_iwb__preview-item">
-										<img src="/img/index/work-item4.jpg" alt="">
+										<a href="/img/work/item7.jpg" data-title="" rel="work-manicure-gallary" class="fancybox"><img src="/img/work/item7-290x280.jpg" alt=""></a>
 									</div>
 								</div>
 								<div class="cols _iwb__preview-cols">
 									<div class="_iwb__preview-item">
-										<img src="/img/index/work-item5.jpg" alt="">
+										<a href="/img/work/item10.jpg" data-title="" rel="work-manicure-gallary" class="fancybox"><img src="/img/work/item10-290x280.jpg" alt=""></a>
 									</div>
 								</div>
 								<div class="cols _iwb__preview-cols">
@@ -730,13 +748,46 @@
 		<div class="_iab__pink-block">
 			<h3 class="_iab__white">Салон<br>21 века</h3>
 		</div>
-		<div class="_iab__preview item1 line-bottom-right">			
-			<img 
-				src="/img/index/adv-item1.jpg" 
-				data-src-0="/img/index/adv-item1-xs.jpg" 
-				data-src-768="/img/index/adv-item1.jpg" 
-				alt=""
-			>
+		<div class="_iab__preview item1">		
+			<div id="carousel-people" class="_iab__carousel-people carousel slide carousel-fade" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-people" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-people" data-slide-to="1"></li>
+					<li data-target="#carousel-people" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item">		
+						<a href="/img/adv/item1-1-full.jpg" class="fancybox" rel="adv-people">
+							<img 
+								src="/img/adv/item1-1.jpg" 
+								data-src-0="/img/adv/item1-1-xs.jpg" 
+								data-src-768="/img/adv/item1-1.jpg" 
+								alt=""
+							>
+						</a>	
+					</div>
+					<div class="item">	
+						<a href="/img/adv/item1-2-full.jpg" class="fancybox" rel="adv-people">
+							<img 
+								src="/img/adv/item1-2.jpg" 
+								data-src-0="/img/adv/item1-2-xs.jpg" 
+								data-src-768="/img/adv/item1-2.jpg" 
+								alt=""
+							>
+						</a>	
+					</div>
+					<div class="item">		
+						<a href="/img/adv/item1-3-full.jpg" class="fancybox" rel="adv-people">
+							<img 
+								src="/img/adv/item1-3.jpg" 
+								data-src-0="/img/adv/item1-3-xs.jpg" 
+								data-src-768="/img/adv/item1-3.jpg" 
+								alt=""
+							>
+						</a>	
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="_iab__preview round">
 			<svg class="icon-svg icon-round" role="img">
@@ -744,52 +795,269 @@
 </svg>
 		</div>
 		<div class="_iab__preview item2">			
-			<img 
-				src="/img/index/adv-item2.jpg" 
-				data-src-0="/img/index/adv-item2-xs.jpg" 
-				data-src-768="/img/index/adv-item2.jpg" 
-				alt=""
-			>
+			<a href="/img/adv/item2-1-full.jpg" class="fancybox" rel="adv-interior">
+				<img 
+					src="/img/adv/item2-1-xs.jpg" 
+					alt=""
+				>
+			</a>
 		</div>
 		<div class="_iab__blue-block">
 			<h3 class="_iab__white">Оснащение<br>22 века</h3>
 		</div>
 		<div class="_iab__preview-row">
-			<div class="_iab__preview item3 line-bottom-left">			
-				<img 
-					src="/img/index/adv-item3.jpg" 
-					data-src-0="/img/index/adv-item3-xs.jpg" 
-					data-src-768="/img/index/adv-item3.jpg" 
-					alt=""
-				>
+			<div class="_iab__preview item3">	
+				<div id="carousel-interior" class="_iab__carousel-interior carousel slide carousel-fade" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-interior" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-interior" data-slide-to="1"></li>
+						<li data-target="#carousel-interior" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item">
+							<a href="/img/adv/item2-2-full.jpg" class="fancybox" rel="adv-interior">
+								<img 
+									src="/img/adv/item2-2.jpg" 
+									data-src-0="/img/adv/item2-2-xs.jpg" 
+									data-src-768="/img/adv/item2-2.jpg"
+									alt=""
+								>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/img/adv/item2-3-full.jpg" class="fancybox" rel="adv-interior">
+								<img 
+									src="/img/adv/item2-3.jpg" 
+									data-src-0="/img/adv/item2-3-xs.jpg" 
+									data-src-768="/img/adv/item2-3.jpg"
+									alt=""
+								>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/img/adv/item2-4-full.jpg" class="fancybox" rel="adv-interior">
+								<img 
+									src="/img/adv/item2-4.jpg" 
+									data-src-0="/img/adv/item2-4-xs.jpg" 
+									data-src-768="/img/adv/item2-4.jpg"
+									alt=""
+								>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="_iab__preview item4">
-				<img 
-					src="/img/index/adv-item4.jpg" 
-					data-src-0="/img/index/adv-item4-xs.jpg" 
-					data-src-768="/img/index/adv-item4.jpg" 
-					alt=""
-				>
+				<a href="/img/adv/item2-5-full.jpg" class="fancybox" rel="adv-interior">
+					<img 
+						src="/img/adv/item2-5.jpg" 
+						data-src-0="/img/adv/item2-5-xs.jpg" 
+						data-src-768="/img/adv/item2-5.jpg"
+						alt=""
+					>
+				</a>
 			</div>
 			<div class="_iab__img-blue">
-				<img 
-					src="/img/index/adv-item5.jpg" 
-					data-src-0="/img/index/adv-item5-xs.jpg" 
-					data-src-768="/img/index/adv-item5.jpg" 
-					alt=""
-				>
+				<a href="/img/adv/item2-6-full.jpg" class="fancybox" rel="adv-interior">
+					<img 
+						src="/img/adv/item2-6.jpg" 
+						data-src-0="/img/adv/item2-6-xs.jpg" 
+						data-src-768="/img/adv/item2-6.jpg"
+						alt=""
+					>
+				</a>
 			</div>
 		</div>
+	</div>
+</div>
+
+
+			<div class="index-team-block" id="team-index">
+	<div class="container _itb__container">	
+		<h2 class="_itb__heading">Наши сотрудники</h2>
+		<div class="_itb__inner">
+			<div class="row _itb__row line1">
+				<div class="cols _itb__cols">
+					<div class="_itb__team-item">
+						<a href="/img/team/item1.jpg" data-title="Копаница Татьяна - Креативный директор" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item1-335x502.jpg" alt=""></a>
+						<div class="_itb__team-name">Копаница Татьяна</div>
+						<div class="_itb__team-post">Креативный директор</div>
+					</div>
+				</div>	
+				<div class="cols _itb__cols">
+					<div class="_itb__team-item">						
+						<a href="/img/team/item2.jpg" data-title="Шаникова Инна - Мастер" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item2-335x502.jpg" alt=""></a>
+						<div class="_itb__team-name">Шаникова Инна</div>
+						<div class="_itb__team-post">Мастер</div>
+					</div>
+				</div>	
+				<div class="cols _itb__cols">
+					<div class="_itb__team-item">
+						<a href="/img/team/item3.jpg" data-title="Деркач Марина - Мастер" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item3-335x502.jpg" alt=""></a>
+						<div class="_itb__team-name">Деркач Марина</div>
+						<div class="_itb__team-post">Мастер</div>
+					</div>
+				</div>	
+				<div class="cols _itb__cols">
+					<div class="_itb__team-item">
+						<a href="/img/team/item4.jpg" data-title="Стеблецова Ольга - Мастер" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item4-335x502.jpg" alt=""></a>
+						<div class="_itb__team-name">Стеблецова Ольга</div>
+						<div class="_itb__team-post">Мастер</div>
+					</div>
+				</div>				
+				
+			</div>
+			<div class="_itb__team-list collapse" id="team-collapse">
+				<div class="row _itb__row line2">
+					<div class="cols _itb__cols">
+						<div class="_itb__team-item">							
+							<a href="/img/team/item12.jpg" data-title="Бухтиярова Катерина - Администратор" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item12-335x502.jpg" alt=""></a>
+							<div class="_itb__team-name">Бухтиярова Катерина</div>
+							<div class="_itb__team-post">Администратор</div>
+						</div>
+					</div>		
+					<div class="cols _itb__cols">
+						<div class="_itb__team-item">							
+							<a href="/img/team/item15.jpg" data-title="Филатова Людмила - Администратор" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item15-335x502.jpg" alt=""></a>
+							<div class="_itb__team-name">Филатова Людмила</div>
+							<div class="_itb__team-post">Администратор</div>
+						</div>
+					</div>	
+					<div class="cols _itb__cols">
+						<div class="_itb__team-item">							
+							<a href="/img/team/item9.jpg" data-title="Павлова Августина - Администратор" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item9-335x502.jpg" alt=""></a>
+							<div class="_itb__team-name">Павлова Августина</div>
+							<div class="_itb__team-post">Администратор</div>
+						</div>
+					</div>	
+					<div class="cols _itb__cols">
+						<div class="_itb__team-item">
+							<a href="/img/team/item5.jpg" data-title="Коваленко Анна - Мастер" rel="team-gallary" class="_itb__team-preview fancybox">
+								<img src="/img/team/item5-335x502.jpg" alt="">
+							</a>
+							<div class="_itb__team-name">Коваленко Анна</div>
+							<div class="_itb__team-post">Мастер</div>
+						</div>
+					</div>	
+					<div class="cols _itb__cols">
+						<div class="_itb__team-item">							
+							<a href="/img/team/item6.jpg" data-title="Девтерева Татьяна - Мастер" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item6-335x502.jpg" alt=""></a>
+							<div class="_itb__team-name">Девтерева Татьяна</div>
+							<div class="_itb__team-post">Мастер</div>
+						</div>
+					</div>	
+					<div class="cols _itb__cols">
+						<div class="_itb__team-item">
+							<a href="/img/team/item7.jpg" data-title="Пичугина Оксана - Мастер" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item7-335x502.jpg" alt=""></a>
+							<div class="_itb__team-name">Пичугина Оксана</div>
+							<div class="_itb__team-post">Мастер</div>
+						</div>
+					</div>	
+					<div class="cols _itb__cols">
+						<div class="_itb__team-item">							
+							<a href="/img/team/item8.jpg" data-title="Графина Ирина - Мастер" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item8-335x502.jpg" alt=""></a>
+							<div class="_itb__team-name">Графина Ирина</div>
+							<div class="_itb__team-post">Мастер</div>
+						</div>
+					</div>
+					<div class="cols _itb__cols">
+						<div class="_itb__team-item">							
+							<a href="/img/team/item10.jpg" data-title="Ветрова Мария - Мастер" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item10-335x502.jpg" alt=""></a>
+							<div class="_itb__team-name">Ветрова Мария</div>
+							<div class="_itb__team-post">Мастер</div>
+						</div>
+					</div>		
+					<div class="cols _itb__cols">
+						<div class="_itb__team-item">							
+							<a href="/img/team/item11.jpg" data-title="Свидло-Чернявская Евгения - Мастер" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item11-335x502.jpg" alt=""></a>
+							<div class="_itb__team-name">Свидло-Чернявская Евгения</div>
+							<div class="_itb__team-post">Мастер</div>
+						</div>
+					</div>		
+					<div class="cols _itb__cols">
+						<div class="_itb__team-item">							
+							<a href="/img/team/item13.jpg" data-title="Евсикова Александра - Мастер" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item13-335x502.jpg" alt=""></a>
+							<div class="_itb__team-name">Евсикова Александра</div>
+							<div class="_itb__team-post">Мастер</div>
+						</div>
+					</div>		
+					<div class="cols _itb__cols">
+						<div class="_itb__team-item">							
+							<a href="/img/team/item14.jpg" data-title="Марчукова Мария - Мастер" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item14-335x502.jpg" alt=""></a>
+							<div class="_itb__team-name">Марчукова Мария</div>
+							<div class="_itb__team-post">Мастер</div>
+						</div>
+					</div>		
+					<div class="cols _itb__cols">
+						<div class="_itb__team-item">							
+							<a href="/img/team/item16.jpg" data-title="Псарева Татьяна - Мастер" rel="team-gallary" class="_itb__team-preview fancybox"><img src="/img/team/item16-335x502.jpg" alt=""></a>
+							<div class="_itb__team-name">Псарева Татьяна</div>
+							<div class="_itb__team-post">Мастер</div>
+						</div>
+					</div>				
+					
+				</div>
+			</div>
+			<div class="_itb__btn-block">
+				<button 
+					type="button" 
+					class="btn-site btn-team" 
+					data-toggle="collapse" 
+					data-target="#team-collapse" 
+					aria-expanded="false" 
+					data-exp-false="Все сотрудники" 
+					data-exp-true="Скрыть"
+				>
+					<span><svg class="icon-svg icon-arrow-price" role="img">
+	<use xlink:href="/img/svg/sprite.svg#arrow-price"></use>
+</svg></span>
+				</button> 
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+			<div class="index-advantages-block">
+	<div class="container _iab__container">
 		<div class="_iab__img-adv">
 			<div class="_img"><img src="/img/bg/bg-adv.png" alt=""></div>
 			<div class="_logo"><svg class="icon-svg icon-logo-text" role="img">
 	<use xlink:href="/img/svg/sprite.svg#logo-text"></use>
 </svg></div>
-			<div class="_text-left">
-				Мы против маникюра в подвале и на дому.
+			<div class="_text-left _text">
+				<p>Мы&nbsp;против маникюра в&nbsp;неподготовленных помещениях, где не&nbsp;соблюдаются технологии и&nbsp;не&nbsp;обрабатываются инструменты.</p>
+				<p>Маникюр на&nbsp;дому&nbsp;— это прошлый век!</p>
 			</div>
-			<div class="_text-right">
-				Мы за маникюр в шикарных условиях по такой же цене.
+			<div class="_text-right _text">
+				
+				<p> Наш маникюрный салон&nbsp;— это место, где сбываются мечты и&nbsp;фантазии воплощаются в&nbsp;реальность. У&nbsp;нас современное оборудование, уютная атмосфера и&nbsp;демократичные цены.</p>
+				<!-- <p>Думаете, красивый маникюр&nbsp;— это всего лишь правильная техника и&nbsp;качественные материалы? Вовсе нет! Это ещё и&nbsp;творчество без границ! Мастера нашей элитной студии маникюра и&nbsp;педикюра знают это как никто другой. Они всегда работают со&nbsp;вдохновением, поэтому и&nbsp;результаты их&nbsp;работы всегда превосходят даже самые смелые ожидания.</p> -->
+			</div>
+		</div>
+	</div>
+</div>
+
+			<div class="index-action-block" id="action-index">
+	<div class="container">
+		<h2 class="_iacb__heading">Акции</h2>
+		<div class="_iacb__owl-block">
+			<div class="_iacb__owl">
+				<div class="_iacb__item">
+					<a href="/img/action/item1.jpg" data-title="" rel="action-gallary" class="fancybox">
+						<img src="/img/action/item1.jpg" alt="">
+					</a>
+				</div>
+				<div class="_iacb__item">
+					<a href="/img/action/item2.jpg" data-title="" rel="action-gallary" class="fancybox">
+						<img src="/img/action/item2.jpg" alt="">
+					</a>
+				</div>
+				<div class="_iacb__item">
+					<a href="/img/action/item3.jpg" data-title="" rel="action-gallary" class="fancybox">
+						<img src="/img/action/item3.jpg" alt="">
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -800,7 +1068,7 @@
 		<h2 class="_irb__heading">Отзывы</h2>
 		<div class="_irb__owl-block">
 			<div class="_irb__owl">
-				<div class="_irb__item">
+				<!--<div class="_irb__item">
 					<a href="#" class="_irb__item-preview">
 						<img src="/img/temp/review-item1.jpg" alt="">
 						<div class="_icon"><svg class="icon-svg icon-inst" role="img">
@@ -808,76 +1076,87 @@
 </svg></div>
 					</a>
 					<h4 class="_irb__item-name">
-						Марина
+						Таня
 					</h4>
-					<div class="_irb__item-note">Большое спасибо мастеру Марине за прекрасный маникюр! Профессионально и качественно! И благодарю за чудесную атмосферу, сервис и возможность насладиться обожаемым сериалом и вкусным чаем! Все для девочек! Приду ещё! 
+					<div class="_irb__item-note">В&nbsp;маникюре самым важным считаю гигиеничность, быстроту и&nbsp;красивый результат. По&nbsp;совету подруги решила посетить этот маникюрный салон&nbsp;— получила массу приятных эмоций и&nbsp;качественный результат! Мастер с&nbsp;большим вниманием отнеслась к&nbsp;моим ручкам, выбрала технику маникюра, которая мне подходит и&nbsp;была очень аккуратна! Очень рада, что наконец возле дома открыла для себя такое прекрасное место! Огромное спасибо! 
+					</div>
+				</div>-->
+				<div class="_irb__item">
+					<a href="https://www.instagram.com/tanyadavidova/" class="_irb__item-preview" target="_blank">
+						<img src="/img/reviews/item1.jpg" alt="">
+						<div class="_icon"><svg class="icon-svg icon-inst" role="img">
+	<use xlink:href="/img/svg/sprite.svg#inst"></use>
+</svg></div>
+					</a>
+					<h4 class="_irb__item-name">
+						Татьяна
+					</h4>
+					<div class="_irb__item-note">Посещаю салон уже не&nbsp;в&nbsp;первый раз. Устраивает расположение, чистота. Девочки все доброжелательные. Мастера были разные, всеми довольна. Очень внимательные, предусмотрительные. Хорошо обрабатываются инструменты, что для меня не&nbsp;маловажно. Большая палитра лаков, можно сделать рисунок при желании.
 					</div>
 
 				</div>
 				<div class="_irb__item">
-					<a href="#" class="_irb__item-preview">
-						<img src="/img/temp/review-item1.jpg" alt="">
+					<a href="https://www.instagram.com/magonovaksenia/" class="_irb__item-preview" target="_blank">
+						<img src="/img/reviews/item2.jpg" alt="">
 						<div class="_icon"><svg class="icon-svg icon-inst" role="img">
 	<use xlink:href="/img/svg/sprite.svg#inst"></use>
 </svg></div>
 					</a>
 					<h4 class="_irb__item-name">
-						Марина
+						Ксения
 					</h4>
-					<div class="_irb__item-note">Большое спасибо мастеру Марине за прекрасный маникюр! Профессионально и качественно! И благодарю за чудесную атмосферу, сервис и возможность насладиться обожаемым сериалом и вкусным чаем! Все для девочек! Приду ещё! 
+					<div class="_irb__item-note">Я&nbsp;стараюсь тщательно выбирать салоны. Не&nbsp;давно побывала в&nbsp;этом салоне и&nbsp;мне очень понравилось! Талантливые мастера, которые реально любят своё дело! 
 					</div>
 
 				</div>
 				<div class="_irb__item">
-					<a href="#" class="_irb__item-preview">
-						<img src="/img/temp/review-item1.jpg" alt="">
+					<a href="https://www.instagram.com/anna24_make_up/" class="_irb__item-preview" target="_blank">
+						<img src="/img/reviews/item4.jpg" alt="">
 						<div class="_icon"><svg class="icon-svg icon-inst" role="img">
 	<use xlink:href="/img/svg/sprite.svg#inst"></use>
 </svg></div>
 					</a>
 					<h4 class="_irb__item-name">
-						Марина
+						Анна
 					</h4>
-					<div class="_irb__item-note">Большое спасибо мастеру Марине за прекрасный маникюр! Профессионально и качественно! И благодарю за чудесную атмосферу, сервис и возможность насладиться обожаемым сериалом и вкусным чаем! Все для девочек! Приду ещё! 
+					<div class="_irb__item-note">Мастер, которая со&nbsp;мной работала с&nbsp;лёгкостью сделала&nbsp;то, что я&nbsp;просила и&nbsp;посоветовала, как лучше ухаживать за&nbsp;моими ноготочками! Если будете в&nbsp;том районе&nbsp;— обязательно загляните
 					</div>
 
 				</div>
 				<div class="_irb__item">
-					<a href="#" class="_irb__item-preview">
-						<img src="/img/temp/review-item1.jpg" alt="">
+					<a href="https://www.instagram.com/nyshasurovneva/" class="_irb__item-preview" target="_blank">
+						<img src="/img/reviews/lock.jpg" alt="">
 						<div class="_icon"><svg class="icon-svg icon-inst" role="img">
 	<use xlink:href="/img/svg/sprite.svg#inst"></use>
 </svg></div>
 					</a>
 					<h4 class="_irb__item-name">
-						Марина
+						Cерафима
 					</h4>
-					<div class="_irb__item-note">Большое спасибо мастеру Марине за прекрасный маникюр! Профессионально и качественно! И благодарю за чудесную атмосферу, сервис и возможность насладиться обожаемым сериалом и вкусным чаем! Все для девочек! Приду ещё! 
+					<div class="_irb__item-note">Начну с&nbsp;того, как тут принимают&nbsp;— все очень доброжелательно, девочки приятны в&nbsp;общении! Внутри самого салона уютно. Маникюр, который мне сделали&nbsp;— продержался долго! Персонал здесь действительно знает свое дело. Рекомендую к&nbsp;посещению.
 					</div>
 
 				</div>
 				<div class="_irb__item">
-					<a href="#" class="_irb__item-preview">
-						<img src="/img/temp/review-item1.jpg" alt="">
+					<a href="https://www.instagram.com/vasiljeva_kate/" class="_irb__item-preview" target="_blank">
+						<img src="/img/reviews/item3.jpg" alt="">
 						<div class="_icon"><svg class="icon-svg icon-inst" role="img">
 	<use xlink:href="/img/svg/sprite.svg#inst"></use>
 </svg></div>
 					</a>
 					<h4 class="_irb__item-name">
-						Марина
+						Катя
 					</h4>
-					<div class="_irb__item-note">Большое спасибо мастеру Марине за прекрасный маникюр! Профессионально и качественно! И благодарю за чудесную атмосферу, сервис и возможность насладиться обожаемым сериалом и вкусным чаем! Все для девочек! Приду ещё! 
+					<div class="_irb__item-note">Очень понравилось обслуживание! Мастер ненавязчивая, очень доброжелательная. Сама обстановка тоже очень приятная, современный зал. Особо хочется отметить большой выбор цветов лака&nbsp;— глаза разбегаются. Была сегодня у&nbsp;вас второй раз&nbsp;— мне очень понравилось. Спасибо!
 					</div>
 
 				</div>
 			</div>
 			<div class="_irb__owl-count">
-				<span class="_count">1</span>/<span class="_all">6</span>
+				<span class="_count">1</span>/<span class="_all">5</span>
 			</div>
 		</div>
 	</div>
-
-		
 </div>
 
 			<div class="index-form-block">
@@ -1044,7 +1323,6 @@
 <![endif]-->
 
 <script src="/js/jquery.min.js" ></script>
-<script src="/js/azbn.js" ></script>
 <script src="/js/document-ready.js" ></script>
 
 <script src="/js/bootstrap.min.js" ></script>
@@ -1052,6 +1330,17 @@
 
 <script src="/js/svg4everybody.min.js" ></script>
 <script>svg4everybody();</script>
+		<script src="/js/wow.min.js" ></script>
+<script>			
+	var wow = new WOW(
+ 		{
+			boxClass:     'wow',      
+			animateClass: 'animated',
+			mobile:       false,
+		}
+	);
+	wow.init();			
+</script>
 		<link rel="stylesheet" type="text/css" href="/css/owl.jquery.css">
 <script src="/js/owl.jquery/owl.carousel.min.js"></script> 
 <script src="/js/owl.jquery/owl.ready.js"></script> 
@@ -1059,8 +1348,8 @@
 <script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
 <script src="/js/2gis-map.js"></script>
 		<link rel="stylesheet" type="text/css" href="/css/validationEngine.jquery.css">
-<script src="/js/jquery.validationEngine-ru.js" ></script>
-<script src="/js/jquery.validationEngine.js" ></script>
+<script src="/js/validationEngine.jquery/jquery.validationEngine-ru.min.js" ></script>
+<script src="/js/validationEngine.jquery/jquery.validationEngine.min.js" ></script>
 <script>			
 	$(document).ready(function () {
 		$("form.form-site").validationEngine(
@@ -1069,6 +1358,33 @@
 			}
 		);
 	});			
+</script>
+		<link rel="stylesheet" type="text/css" href="/css/fancybox.jquery.css" media="screen" />	
+<script src="/plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.min.js"></script>
+<script src="/js/fancybox.jquery/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.fancybox').fancybox({
+			prevEffect : 'fade',
+			nextEffect : 'fade',
+			padding: 36,
+			margin: 5,
+		    tpl: {
+				closeBtn : '<a class="fancybox-item fancybox-close" href="javascript:;"><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#cancel"></use></svg></a>',
+				next     : '<a class="fancybox-nav fancybox-next" href="javascript:;"><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#next"></use></svg></a>',
+				prev     : '<a class="fancybox-nav fancybox-prev" href="javascript:;"><span><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#back"></use></svg></span></a>',},
+			afterLoad  : function () {
+	            $.extend(this, {
+	                aspectRatio : false,
+	                type    : 'html',
+	                width   : '100%',
+	                height  : '100%',
+	                content : '<div class="fancybox-image-full" ><div><img src="' + this.href + '" alt=""></div></div>'
+	            });
+	        }
+		});
+	})
 </script>
 		<script src="/js/response.min.js" ></script> 
 <script>

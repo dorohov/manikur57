@@ -13,5 +13,5 @@ DG.then(function () {
 		iconAnchor: [24, 120],
 		popupAnchor: [0, 0]
 	});
-	DG.marker([52.9786, 36.075325], {icon: myIcon}).addTo(map).bindPopup('Маникюр.<br> г. Орёл, ул. Максима Горького 44');
+	DG.marker([52.978904, 36.075878], {icon: myIcon}).addTo(map).bindPopup('Маникюр.<br> г. Орёл, ул. Максима Горького 44');
 });
