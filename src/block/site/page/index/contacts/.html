@@ -1,8 +1,8 @@
 <div class="{{class}}" id="{{scrollto}}">	
 	<div class="{{prefix}}container container"> 
-		<div class="{{prefix}}bg"></div>
-		<h2 class="{{prefix}}heading">Ждем Вас</h2>
-		<div class="row {{prefix}}row"> 
+		<div class="{{prefix}}bg {{wow_bg_class}}" data-wow-duration="{{wow_bg_duration}}" data-wow-delay="{{wow_bg_delay}}"></div>
+		<h2 class="{{prefix}}heading {{wow_container_class}}" data-wow-duration="{{wow_container_duration}}" data-wow-delay="{{wow_container_delay}}">Ждем Вас</h2>
+		<div class="row {{prefix}}row {{wow_container_class}}" data-wow-duration="{{wow_container_duration}}" data-wow-delay="{{wow_container_delay}}"> 
 			<div class="cols {{prefix}}cols"> 
 				<div>{{contacts.address}}</div>
 				<div class="{{prefix}}tel">Т. <a href="tel:{{contacts.phone_tel}}">{{contacts.phone}}</a></div>
@@ -12,8 +12,8 @@
 				<div>СБ - ВС. <b>10:00 — 20:00</b></div>
 			</div>
 		</div>
-		<div class="{{prefix}}map" id="2gis-map"></div>
-		<div class="{{prefix}}inst" >
+		<div class="{{prefix}}map {{wow_map_class}}" data-wow-duration="{{wow_map_duration}}" data-wow-delay="{{wow_map_delay}}" id="2gis-map"></div>
+		<div class="{{prefix}}inst {{wow_inst_class}}" data-wow-duration="{{wow_inst_duration}}" data-wow-delay="{{wow_inst_delay}}">
 			<div class="row {{prefix}}inst-row1">
 				<div class="cols {{prefix}}inst-cols">
 					<a href="{{soc.inst}}" target="_blank" class="{{prefix}}inst-link">manikur57</a>
