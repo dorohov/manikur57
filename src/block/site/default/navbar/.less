@@ -82,6 +82,8 @@
 	@media @media-device{width: 100%;}
 	@media @media-screen{width: 16%;}
 	@media @media-size-md-s{width: 13%}
+	@media @media-size-md{width: 13%}
+	@media @media-size-lg{width: 11%}
 }
 .navbar-collapse-cols{
 	@media @media-device{width: 100%;}
@@ -248,6 +250,7 @@
 		@media @media-device{width: 100%; margin-bottom: 10px;}
 		@media @media-screen{margin: 0 22px;}
 		@media @media-size-md-s{margin: 0 15px} 
+		@media @media-size-md{margin: 0 15px} 
 		> a{
 			font-kerning: none;
 			display: inline-block;
@@ -286,6 +289,11 @@
 				}	
 			}
 			@media @media-size-md-s{  
+				font-size: @b-nav-fs - 2; //14px
+				line-height: @b-nav-lh - 2; //22px
+				padding: 5px 0;
+			}
+			@media @media-size-md{  
 				font-size: @b-nav-fs - 2; //14px
 				line-height: @b-nav-lh - 2; //22px
 				padding: 5px 0;

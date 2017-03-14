@@ -43,6 +43,26 @@ $(function() {
 			},			
 		}
 	});	
+	/*$('._ncb__owl').owlCarousel({
+		margin: 0,
+		navText: ['<svg class="icon-svg" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#back"></use></svg>', '<svg class="icon-svg" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#next"></use></svg>'],
+		dots: true,
+		smartSpeed: 700,
+		animateOut: 'fadeOut',
+		//loop: true,
+		//loop: true,
+		mouseDrag: false,
+		responsive : {
+			0 : {
+				nav: false,
+				items:1,
+			},
+			768 : {
+				nav: true,
+				items:3,
+			},			
+		}
+	});*/	
 	/*
 	$('._iab__owl-people').owlCarousel({
 		margin: 0,

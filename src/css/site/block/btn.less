@@ -44,6 +44,7 @@
 		.calcLineHeight(20, 24, 320, 1680);		
 		transition: @transition-site;
 	}
+
 	&, &:focus, &:hover{
 		&::after{
 			color: @b-color-a;
@@ -86,6 +87,57 @@
 		svg{
 			fill: @b-color-a;
 			stroke: @b-color-a;
+		}
+	}
+}
+.btn-back{
+	position: relative;
+	padding-left: 55px;
+	padding-bottom: 5px;	
+	font-weight: 700;		
+	.calcFontSize(18, 22, 320, 1680); 
+	.calcLineHeight(20, 24, 320, 1680);		
+	transition: @transition-site;
+	&::before{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 55px;
+		right: 0;
+		transform-origin: center;
+		transform: scale(1, 1);
+		height: 3px;
+		background-color: @b-color-a;	
+		transition: @transition-site;
+	}
+	&, &:focus, &:hover{		
+		color: @b-color-a;
+		border-bottom-color: @b-color-a;		
+	}
+	span{
+		position: absolute;
+		top: 50%;
+		transform: translateY(~"calc(-50% - 5px)");
+		left: 0;
+		width: 40px;
+		height: 40px;
+		transition: @transition-site;
+	}
+	svg{
+		width: 100%;
+		height: 100%;
+		fill: @b-color-a;
+		transition: @transition-site;
+	}
+	&:hover{
+		&::before{
+			transform: scale(0, 1);
+		}
+		span{
+			transform: translate(-10px,~"calc(-50% - 5px)");
+		}
+		svg{
+			fill: @b-color-a;
 		}
 	}
 }

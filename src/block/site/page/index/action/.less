@@ -42,12 +42,20 @@
 			}
 		}
 	}
-	&owl{
+	&owl-one{
 		padding-bottom: 50px;
 		z-index: 2!important;
-		.owl-stage-outer{
+		position: relative;
+		> div{			
 			border: 3px solid @blue-light;
 		}
+	}
+	&owl{
+		z-index: 2!important;
+		padding-bottom: 50px;
+		.owl-stage-outer{
+			border: 3px solid @blue-light;
+		}		
 	}
 	&item{
 		img{}
