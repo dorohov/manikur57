@@ -1,7 +1,7 @@
 var map;
 DG.then(function () {
 	map = DG.map('2gis-map', {
-		center: [52.978891,36.075092],
+		center: [52.978642,36.076564],
 		zoom: 17,
 		scrollWheelZoom: false,
         fullscreenControl: false
@@ -13,5 +13,5 @@ DG.then(function () {
 		iconAnchor: [24, 120],
 		popupAnchor: [0, 0]
 	});
-	DG.marker([52.978904, 36.075878], {icon: myIcon}).addTo(map).bindPopup('Маникюр.<br> г. Орёл, ул. Максима Горького 44');
+	DG.marker([52.978642,36.076564], {icon: myIcon}).addTo(map).bindPopup('Маникюр.<br> г. Орёл, ул. Максима Горького 44');
 });
