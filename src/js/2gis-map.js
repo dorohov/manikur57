@@ -7,8 +7,8 @@ DG.then(function () {
         fullscreenControl: false
   	});
 	var myIcon = DG.icon({
-		iconUrl: '/img/icon/icon-map.png',
-		iconRetinaUrl: '/img/icon/icon-map.png',
+		iconUrl: '/wp-content/themes/azbnbasetheme/img/icon/icon-map.png',
+		iconRetinaUrl: '/wp-content/themes/azbnbasetheme/img/icon/icon-map.png',
 		iconSize: [48, 120],
 		iconAnchor: [24, 120],
 		popupAnchor: [0, 0]
