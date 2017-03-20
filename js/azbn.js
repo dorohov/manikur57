@@ -1,8 +1,7 @@
 
 $(function(){
 	
-	
-	console.log($('.azbn-order-form'));
+	//console.log($('.azbn-order-form'));
 	
 	$(document.body).on('submit', '.azbn-order-form', {}, function(event){
 		event.preventDefault();
@@ -20,5 +19,18 @@ $(function(){
 		});
 		
 	});
+	
+	
+	$(document.body).on('click', '.azbn-portfolio-cat-switcher li a[data-toggle="tab"]', {}, function(event){
+		event.preventDefault();
+		
+		var btn = $(this);
+		var flt = btn.attr('href');
+		
+		$('.azbn-portfolio-cat-main-img').removeClass('in active');
+		$('.azbn-portfolio-cat-main-img[data-azbn-portfolio-cat-main-img-filter="' + flt + '"]').addClass('in active');
+		
+	});
+	
 	
 });
