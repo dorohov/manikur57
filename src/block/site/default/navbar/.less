@@ -163,10 +163,13 @@
 		width: 195px;
 	    //height: 100vh!important;
 	    height: 100%!important;
-        z-index: 1;
+        z-index: -1;
         padding: 0;
         overflow: visible!important;
 		opacity: 0;				
+		&.in {
+			z-index: 1;
+		}
 	}
 	@media @media-screen {
 		padding: 0;

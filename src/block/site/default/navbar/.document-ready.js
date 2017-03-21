@@ -42,3 +42,19 @@
 	            }
 	        }
 	});*/
+	
+	
+$(function(){
+	
+	$(document.body).on('click', '.navbar-collapse.collapse.in li a.scrollto', {}, function(event){
+		
+		if(screenJS.isXS() || screenJS.isSM()) {
+			event.preventDefault();
+			
+			$('.navbar .hamburger.hamburger--arrow').trigger('click');
+			
+		}
+		
+	});
+	
+})
