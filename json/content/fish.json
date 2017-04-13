@@ -1,10 +1,13 @@
 {
 	"contacts":{
 		"name":"Маникюр",
-		"email":"sales@zenit-orel.ru",
+		"email":"manikur57@yandex.ru",
 		"phone":"49-08-08",
 		"phone_tel":"+74862490808",
-		"address":"г. Орёл, ул. Максима Горького 44"
+		"address":"г. Орёл, ул. Максима Горького 44",
+		"domain_link":"http://manikur57.ru/",
+		"domain":"manikur57.ru",
+		"agreement_page":"agreement"
 	},
 	"soc":{
 		"vk":"",

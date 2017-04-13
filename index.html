@@ -22,20 +22,7 @@
 	</head>
 	<body id="body-index">
 		<div class="page-inner">
-			<div class="_czr__loader active page-loader active" >
-	<div class="_czr__preloader-inner" >
-		<div class="_czr__preloader-process-container process-container" >
-			<div class="_czr__preloader-process-level process-level" ></div>
-		</div>
-		<div class="_czr__preloader-center" >
-			<!-- <div class="_azbn__preloader-percent" >75</div> -->
-			<a class="close-loader" href="#not-lazyload" >
-				<div id="_czr__spinner"></div>
-				<!-- <img src="/img/default/preloader.gif" alt=""> -->
-			</a>
-		</div>
-	</div>
-</div> 
+			 
 				
 			 <nav class="navbar navbar-site scroll">
 	<div class="container">		
@@ -1407,9 +1394,10 @@
 	<div class="_ifb__round item3 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.4s"></div>
 	<div class="_ifb__bg wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s"></div>
 	<div class="container _ifb__container wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
-		<div class="_ifb__inner">
-			<h2 class="_ifb__heading">Получи маникюр бесплатно при первом посещении!</h2>
-			<form action="#" class="form-site _ifb__form"> 
+		<div class="_ifb__flex">
+			<div class="_ifb__inner">
+				<h2 class="_ifb__heading">Получи маникюр бесплатно при первом посещении!</h2>
+				<form action="#" class="form-site _ifb__form"> 
 	<div class="row _ifb__row">
 		<div class="cols _ifb__col-6">
 			<div class="form-inline__input">
@@ -1424,12 +1412,24 @@
 			</div>	
 		</div>
 		<div class="cols _ifb__col-12">
+			<div class="form-inline__input agreement">
+                <input class="form-inline__agreement-checkbox validate[required]" id="f[processing]" name="f[processing]" type="checkbox">
+                <label for="f[processing]" class="form-inline__agreement-label"></label>
+				<label for="f[processing]" class="form-inline__agreement-text">
+					Я согласен на обработку <a href="/agreement.html">персональных данных</a>
+				</label>
+           
+			</div>
+		</div>
+		<div class="cols _ifb__col-12">
 			<div class="_ifb__btn-block">
-				<button type="button" data-toggle="modal" data-target="#modal-message" class="btn-site btn-pink btn-submit _ifb__btn">Отправить заявку</button>
+				<button type="submit" class="btn-site btn-pink btn-submit _ifb__btn">Отправить заявку</button>
+				<!-- <button type="button" data-toggle="modal" data-target="#modal-message" class="btn-site btn-pink btn-submit _ifb__btn">Отправить заявку</button> -->
 			</div>	 
 		</div>
 	</div>
 </form> 
+			</div>
 		</div>
 	</div>
 </div>
