@@ -2733,6 +2733,7 @@ textarea._frs__form-control{
 		a{color: @grey;}
 		@media @media-size-xs-p{
 			padding: 6vw;
+		    text-align: center;
 		}
 		@media @media-size-xs-l{
 			padding: 4vw;
@@ -2797,7 +2798,12 @@ textarea._frs__form-control{
 		font-size: @b-fs + 6px;
 		padding: 15px 25px 20px 50px;
 		margin-bottom: 3px;
-		@media @media-size-xs-p{width: 70%; max-width: 190px;}
+		@media @media-size-xs-p{
+			width: 70%; 
+			max-width: 190px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 		._inst{
 			width: 34px;
 			height: 34px;
@@ -2959,16 +2965,20 @@ textarea._frs__form-control{
 		height: 100%;
 	}
 	&inner{
-		@media @media-size-xs-p{
+		/*@media @media-size-xs-p{
 		    padding-top: 10vw;
 		    padding-bottom: 10vw;
 		}
 		@media @media-size-xs-l{
 		    padding-top: 4vw;
 		    padding-bottom: 4vw;
+		}*/
+		//@media @media-size-xs-p{max-width: 210px;}
+		@media @media-size-xs{
+			max-width: 380px;
+		    padding-top: 25px;
+		    padding-bottom: 25px;
 		}
-		@media @media-size-xs-p{max-width: 210px;}
-		@media @media-size-xs-l{max-width: 380px;}
 		@media @media-size-sm{
 			max-width: 450px; 
 			//padding-top: 10vw;
@@ -2988,13 +2998,16 @@ textarea._frs__form-control{
 		background-size: contain;
 		background-position: 104% top;
 		background-repeat: no-repeat; 
-		@media @media-size-xs{
+		/*@media @media-size-xs{
 			background-size: auto 100%;
+			background: none;
 		}
 		@media @media-size-xs-p{
 			transform: translateX(25%);
 			background-position: 0% top;
-		}
+			background: none;
+		}*/
+		@media @media-size-xs{background: none;}
 		@media @media-size-xs-l{transform: translateX(25%);}
 		@media @media-size-sm-p{transform: translateX(30%);}
 	}
@@ -4244,7 +4257,10 @@ textarea._frs__form-control{
 	&gallery-img{
 		display: block;
 		position: relative;	
-		overflow: hidden;	
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;	
 		&::before{
 			width: 3px;
 		}
@@ -4258,6 +4274,11 @@ textarea._frs__form-control{
 			z-index: 2;
 			background-color: @white;
 			transition: 0.5s all;
+		}
+		@media @media-device{height: 300px;}
+		@media @media-screen{
+			max-height: 500px;
+			height: 27vw;
 		}
 	}
 	&gallery-cols{	

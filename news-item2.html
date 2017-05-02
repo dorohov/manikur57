@@ -262,7 +262,7 @@
 		<link rel="stylesheet" type="text/css" href="/css/fancybox.jquery.css" media="screen" />	
 <script src="/plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.min.js"></script>
 <script src="/js/fancybox.jquery/jquery.fancybox.js"></script>
-
+<script src="/js/fancybox.jquery/jquery.fancybox-buttons.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('.fancybox').fancybox({
@@ -270,11 +270,20 @@
 			nextEffect : 'fade',
 			padding: 36,
 			margin: 5,
+			helpers : {
+				buttons	: {
+					 tpl: '<div id="fancybox-buttons"><a class="fancybox-item fancybox-close" href="javascript:jQuery.fancybox.close();"><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#cancel"></use></svg></a> <a class="btnPrev fancybox-nav fancybox-prev " href="javascript:;"><span><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#back"></use></svg></span></a> <a class="fancybox-nav fancybox-next btnNext" href="javascript:;"><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#next"></use></svg></a></div>'
+				}
+			},
 		    tpl: {
 				closeBtn : '<a class="fancybox-item fancybox-close" href="javascript:;"><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#cancel"></use></svg></a>',
 				next     : '<a class="fancybox-nav fancybox-next" href="javascript:;"><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#next"></use></svg></a>',
-				prev     : '<a class="fancybox-nav fancybox-prev" href="javascript:;"><span><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#back"></use></svg></span></a>',},
-			afterLoad  : function () {
+				prev     : '<a class="fancybox-nav fancybox-prev" href="javascript:;"><span><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#back"></use></svg></span></a>',
+				closeBtn : '',
+				next     : '',
+				prev     : '',
+			},
+			/*afterLoad  : function () {
 	            $.extend(this, {
 	                aspectRatio : false,
 	                type    : 'html',
@@ -282,7 +291,7 @@
 	                height  : '100%',
 	                content : '<div class="fancybox-image-full" ><div><img src="' + this.href + '" alt=""></div></div>'
 	            });
-	        }
+	        }*/
 		});
 	})
 </script>

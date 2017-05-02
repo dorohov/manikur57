@@ -81,7 +81,10 @@
 	&gallery-img{
 		display: block;
 		position: relative;	
-		overflow: hidden;	
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;	
 		&::before{
 			width: 3px;
 		}
@@ -95,6 +98,11 @@
 			z-index: 2;
 			background-color: @white;
 			transition: 0.5s all;
+		}
+		@media @media-device{height: 300px;}
+		@media @media-screen{
+			max-height: 500px;
+			height: 27vw;
 		}
 	}
 	&gallery-cols{	

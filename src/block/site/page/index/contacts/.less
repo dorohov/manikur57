@@ -78,6 +78,7 @@
 		a{color: @grey;}
 		@media @media-size-xs-p{
 			padding: 6vw;
+		    text-align: center;
 		}
 		@media @media-size-xs-l{
 			padding: 4vw;
@@ -142,7 +143,12 @@
 		font-size: @b-fs + 6px;
 		padding: 15px 25px 20px 50px;
 		margin-bottom: 3px;
-		@media @media-size-xs-p{width: 70%; max-width: 190px;}
+		@media @media-size-xs-p{
+			width: 70%; 
+			max-width: 190px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 		._inst{
 			width: 34px;
 			height: 34px;
