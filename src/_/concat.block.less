@@ -1670,6 +1670,111 @@ textarea._frs__form-control{
 	}
 */
 
+.team-card__{
+	&row{
+		margin-top: -20px;
+	}
+	&cols{
+		padding-top: 20px;
+		&.is--cols-4{
+			@media @media-notsmart {.makeCols(4, 12);}
+		}
+		&.is--cols-8{
+			@media @media-notsmart {.makeCols(8, 12);}
+		}
+	}
+	&preview{
+		position: relative;
+		padding: 15px 0 0 20px;
+		@media @media-notsmart {
+			padding: 1.5vw 0 0 3.5vw;
+		}
+		img{
+			position: relative;
+			z-index: 2;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			min-width: 210px;
+			min-height: 320px;
+			max-width: 310px;
+			max-height: 420px;
+			width: 17vw;
+			height: 23vw;
+			background-color: @pink;
+		}		
+	}
+	&note{
+		@media @media-screen {
+			padding-top: 3vw;
+		}
+	}
+	&heading{
+		font-weight: 700;
+		.calcFontSize(28, 45, 320, 1680);
+		.calcLineHeight(34, 50, 320, 1680);
+	}
+	&post{
+		.calcFontSize(18, 23, 320, 1680);
+		.calcLineHeight(22, 27, 320, 1680);
+		margin-bottom: 40px;
+		@media @media-screen {
+			margin-bottom: 3vw;
+		}
+	}
+	&text-block{
+		margin-bottom: 20px;
+		@media @media-screen {
+			margin-bottom: 2vw;
+		}
+	}
+	&heading-sm{
+		margin-bottom: 30px;
+	}
+	&owl-block{
+		position: relative;
+		@media @media-size-xs {
+			max-width: ~"calc(100vw - 30px)";
+		}
+	}
+	&owl{
+		padding-bottom: 35px;
+		@media @media-screen {padding-bottom: 4vw;}		
+	}
+	&owl-img{
+		display: block;
+		img{
+			@media @media-size-xs {
+				margin: 0 auto;
+			}
+		}
+	}
+	&owl-count{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		.calcFontSize(30, 54, 320, 1680);
+		.calcLineHeight(24, 48, 320, 1680);
+		font-family: @bodoni;
+	}
+	&owl-count-item{
+		.calcFontSize(18, 25, 320, 1680);
+		&.is--count{
+			color: @pink;
+			font-style: italic;
+			.calcFontSize(30, 54, 320, 1680);
+			.calcLineHeight(24, 48, 320, 1680);
+		}
+	}
+	&btn-back{
+		margin-top: 35px;
+	}
+}
 // ====== prefix ._irb__ ====== //
 .index-action-block{
 	position: relative;
@@ -1779,7 +1884,7 @@ textarea._frs__form-control{
 	}
 	&preview-row{
 		@media @media-size-xs {width: 100%;}
-		@media @media-size-xs-l{margin: 0 -5px;	display: flex;}
+		@media @media-size-xs-l{margin: 0 -5px;	display: flex; flex-wrap: wrap;}
 	}
 
 	&preview{
@@ -1828,6 +1933,7 @@ textarea._frs__form-control{
 			}
 			@media @media-size-xs-l{
 				width: 33.33333%;
+				width: 50%;
 				padding-left: 5px;
 				padding-right: 5px;
 				//img{max-height: 150px}
@@ -1844,6 +1950,7 @@ textarea._frs__form-control{
 		&.item4{
 			@media @media-size-xs-l{
 				width: 33.33333%;
+				width: 50%;
 				padding-right: 5px;
 				padding-left: 5px;
 			}
@@ -2008,6 +2115,17 @@ textarea._frs__form-control{
 			}
 		}
 	}
+	&img-row{
+		display: flex;
+		align-items: center;
+		@media @media-size-xs {
+			flex-wrap: wrap;
+		}
+		@media @media-size-xs-l {
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+	}
 	&img-blue{
 	    position: relative;
 	    img{
@@ -2028,14 +2146,66 @@ textarea._frs__form-control{
 	    }
 		@media @media-size-xs-l{
 			width: 33.33333%;
-			padding-left: 5px;
-			padding-right: 5px;
+			width: 50%;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 		@media @media-notsmart{
 			width: 25vw;
 			margin-bottom: 0vw;
 			margin-left: 17vw;
 			max-width: 457px;
+			//
+		    margin-right: 2.5vw;
+		}
+	}
+	&img-blue-text{
+		.makeCols(12, 12);
+		padding-top: 30px;
+		@media @media-size-xs-l{
+			.makeCols(6, 12);
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		@media @media-notsmart {.makeCols(5, 12); padding-top: 0}
+		line-height: @b-lh - 6;
+		h1, h2, h3, h4, h5{
+			.calcFontSize(22, 45, 320, 1680);
+			.calcLineHeight(26, 50, 320, 1680);
+			font-family: @bodoni;
+			font-weight: 400;
+			margin-bottom: 20px;
+		}
+	}
+	&img-blue-btn-block{
+		text-align: right;
+	}
+	&img-blue-btn{
+		margin-top: 35px;
+		color: @pink;
+		font-weight: 700;
+		display: inline-block;
+		font-size: @b-fs + 4;
+		.is--arrow{
+			margin-top: 5px;
+			color: @black;
+			width: 110px;
+			height: 10px;
+			display: block;
+			margin-left: auto;
+			transition: @transition-site;
+			svg{
+				width: 100%;
+				height: 100%;
+				display: block;
+				stroke: currentColor;
+			}
+		}
+		&:hover{
+			.is--arrow{
+				color: @pink;
+				transform: translateX(10px);
+			}
 		}
 	}
 } 

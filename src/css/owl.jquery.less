@@ -111,6 +111,40 @@
 		}
 	}
 }
+.team-card__owl{
+	.owl-nav{
+		div{
+			position: absolute;
+			bottom: 0;   
+			transition: @transition-site;
+			width: 72px;
+			height: 12px;
+			color: @b-color;
+			transform: translate(0px, 0%);	
+			//@media @media-size-sm-p{bottom: 6%;}
+			svg{
+				width: 100%;
+				height: 100%;
+				display: block;
+			}			
+			&:hover{
+				color: @pink;
+			}
+		}
+		.owl-prev{
+			left: ~"calc(46% - 72px - (72px / 2))";
+			&:hover{
+				transform: translate(-10px, 0%);				
+			}
+		}
+		.owl-next{
+			right: ~"calc(46% - 72px - (72px / 2))";
+			&:hover{
+				transform: translate(10px, 0%);					
+			}
+		}
+	}
+}
 ._irb__owl{
 	.owl-nav{
 		div{

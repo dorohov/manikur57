@@ -1,0 +1,105 @@
+.team-card__{
+	&row{
+		margin-top: -20px;
+	}
+	&cols{
+		padding-top: 20px;
+		&.is--cols-4{
+			@media @media-notsmart {.makeCols(4, 12);}
+		}
+		&.is--cols-8{
+			@media @media-notsmart {.makeCols(8, 12);}
+		}
+	}
+	&preview{
+		position: relative;
+		padding: 15px 0 0 20px;
+		@media @media-notsmart {
+			padding: 1.5vw 0 0 3.5vw;
+		}
+		img{
+			position: relative;
+			z-index: 2;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			min-width: 210px;
+			min-height: 320px;
+			max-width: 310px;
+			max-height: 420px;
+			width: 17vw;
+			height: 23vw;
+			background-color: @pink;
+		}		
+	}
+	&note{
+		@media @media-screen {
+			padding-top: 3vw;
+		}
+	}
+	&heading{
+		font-weight: 700;
+		.calcFontSize(28, 45, 320, 1680);
+		.calcLineHeight(34, 50, 320, 1680);
+	}
+	&post{
+		.calcFontSize(18, 23, 320, 1680);
+		.calcLineHeight(22, 27, 320, 1680);
+		margin-bottom: 40px;
+		@media @media-screen {
+			margin-bottom: 3vw;
+		}
+	}
+	&text-block{
+		margin-bottom: 20px;
+		@media @media-screen {
+			margin-bottom: 2vw;
+		}
+	}
+	&heading-sm{
+		margin-bottom: 30px;
+	}
+	&owl-block{
+		position: relative;
+		@media @media-size-xs {
+			max-width: ~"calc(100vw - 30px)";
+		}
+	}
+	&owl{
+		padding-bottom: 35px;
+		@media @media-screen {padding-bottom: 4vw;}		
+	}
+	&owl-img{
+		display: block;
+		img{
+			@media @media-size-xs {
+				margin: 0 auto;
+			}
+		}
+	}
+	&owl-count{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		.calcFontSize(30, 54, 320, 1680);
+		.calcLineHeight(24, 48, 320, 1680);
+		font-family: @bodoni;
+	}
+	&owl-count-item{
+		.calcFontSize(18, 25, 320, 1680);
+		&.is--count{
+			color: @pink;
+			font-style: italic;
+			.calcFontSize(30, 54, 320, 1680);
+			.calcLineHeight(24, 48, 320, 1680);
+		}
+	}
+	&btn-back{
+		margin-top: 35px;
+	}
+}

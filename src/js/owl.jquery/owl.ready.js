@@ -1,5 +1,14 @@
 'use strict';
 $(function() {
+	$(document.body).on('translated.owl.carousel', '.owl-carousel', {}, function(event){
+		event.preventDefault();		
+		var block = $(this);		
+		var items = block.find('.owl-item:not(.cloned)');		
+		var active = items.filter('.active');		
+		var i = active.find('a').attr('data-owl-item');		
+		$('.owl-count__item.is--count').html(i); 		
+	});	
+	$('.owl-carousel').trigger('translated.owl.carousel');	
 	//reviews
 	$('._irb__owl').owlCarousel({
 		margin: 0,
@@ -40,6 +49,36 @@ $(function() {
 			},
 			768 : {
 				nav: true,
+			},			
+		}
+	});	
+	$('.team-card__owl').owlCarousel({
+		margin: 0,
+		navText: ['<svg class="icon-svg" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/wp-content/themes/azbnbasetheme/img/svg/sprite.svg#arrow-prev"></use></svg>', '<svg class="icon-svg" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/wp-content/themes/azbnbasetheme/img/svg/sprite.svg#arrow-next"></use></svg>'],
+
+		//navText: ['<svg class="icon-svg" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#arrow-prev"></use></svg>', '<svg class="icon-svg" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#arrow-next"></use></svg>'],	
+		dots: false,
+		items:3,
+		smartSpeed: 500,
+		nav: true,
+		loop: true,
+		autoWidth: true,
+		margin: 10,
+		responsive : {
+			0 : {
+				items:1,
+				autoWidth:false,
+				loop: false,
+			},
+			/*500 : {
+				//items:2,
+			},*/
+			768:{
+				loop: true,
+				autoWidth:true,
+			},
+			1000 : {
+				items:3,
 			},			
 		}
 	});	
