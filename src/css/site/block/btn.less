@@ -24,12 +24,25 @@
 		@media @media-device{padding: 10px 15px}	
 		@media @media-screen{padding: 1.5vh 4.5vh}
 	}
+	&.xs{
+		@media @media-device{
+			padding: 10px 10px;
+			font-size: @b-fs ;
+		}
+	}
 }
 .btn-pink{
 	background-color: lighten(@pink, 0%);
 	&,&:hover,&:focus{color: @white;}
 	&:hover{
 		background-color: lighten(@pink, 10%);
+	}
+}
+.btn-white{
+	background-color: @white;
+	&,&:hover,&:focus{color: @pink;}
+	&:hover{
+		//background-color: lighten(@pink, 10%);
 	}
 }
 .btn-team{
